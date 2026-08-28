@@ -1,38 +1,49 @@
 # Threat Model — Sample Flask App
 
-## 1. Data-flow diagram
+## 1. Data-flow Diagram
 
 ![DFD](image-1.png)
 
----
+The diagram shows the untrusted web client, the Flask application, SQLite `notes.db`, the `uploads/` store, and the `/notes`, `/upload`, and `/files/<name>` flows. The dashed line marks the Internet-to-application trust boundary.
 
-## 2. Elements & trust boundaries
+## 2. Elements & Trust Boundaries
 
-| Element | Type (process/store/entity/flow) | Trust boundary crossed? |
+| Element | Type | Trust boundary crossed? |
 |---|---|---|
-| Web client | External entity | Yes (Internet → Flask app) |
-| Flask app | Process | Yes (receives untrusted input from the Internet) |
-| SQLite DB (`notes.db`) | Data store | No (internal data store accessed by the Flask app) |
-| `uploads/` store | Data store | No (internal storage accessed by the Flask app) |
+| Web client | External entity | Yes — sends untrusted data across the Internet → Flask boundary |
+| Flask app | Process | Yes — receives requests from the untrusted client |
+| SQLite DB (`notes.db`) | Data store | No — directly accessed by the Flask process |
+| `uploads/` store | Data store | No — directly accessed by the Flask process |
+| `/notes` | Data flow | Yes — note data and responses cross the Internet → Flask boundary |
+| `/upload` | Data flow | Yes — file content and filename cross the Internet → Flask boundary |
+| `/files/<name>` | Data flow | Yes — filename requests enter and file content leaves the application |
 
----
+## 3. STRIDE Analysis
 
-## 3. STRIDE analysis
+This analysis describes the instructor's original design before the Task 8 upload mitigation.
 
 | Element | S | T | R | I | D | E |
 |---|---|---|---|---|---|---|
-| **/notes** | Client can spoof the `owner` because there is no authentication. | Notes can be created or modified without authorization. | No audit logging of note creation or updates. | All notes can be retrieved without access control. | Repeated requests may consume database resources. | Missing authorization may allow unauthorized actions. |
-| **/upload** | Anyone can upload files because there is no authentication. | User-controlled filenames may allow arbitrary file writes (path traversal). | No logging of uploaded files or users. | Upload response may reveal information about stored files. | No upload size or rate limits may exhaust storage. | Unsafe uploaded files could lead to privilege escalation or code execution if later executed. |
-| **/files/<name>** | No authentication before downloading files. | File access requests may attempt unauthorized file access (although the read path is comparatively protected). | No logging of file downloads. | Uploaded files may be disclosed to unauthorized users. | Excessive download requests may affect availability. | Missing authorization may expose files that should require higher privileges. |
+| `/notes` | A client can claim any `owner`; there is no authentication. | Anyone can add untrusted note content without authorization. | Note actions have no audit log or verified identity. | GET returns every note without access control. | Repeated reads or writes can consume application and database resources. | Missing authorization lets an anonymous client perform note actions intended for users. |
+| `/upload` | Any unauthenticated client can upload. | Raw `f.filename` becomes part of a filesystem path, allowing an unsafe write. | Uploads have no audit log or verified uploader. | The response reveals the stored filename, and uploaded files may be publicly retrievable. | There are no upload size, quota, or rate limits. | An unsafe write could affect more privileged files if process permissions allow it; code execution is not proven by this design alone. |
+| `/files/<name>` | Any unauthenticated client can request a file. | `send_from_directory` makes this read path comparatively defended against traversal; it does not write files. | Downloads have no audit log or verified requester. | Anyone who knows or guesses a filename can retrieve it. | Repeated or large downloads can consume bandwidth and worker capacity. | No direct privilege escalation is shown; missing authorization can disclose files but does not itself grant a higher role. |
 
----
+The main trust-boundary problem is that the Flask app accepts identity, note data, file content, and filenames from an untrusted client without meaningful authentication or authorization. The `/files/<name>` read path is comparatively safer against path traversal because it uses `send_from_directory`, but it still lacks access control and logging.
 
-## 4. Top 5 risks (likelihood × impact) + mitigation
+## 4. Top 5 Risks
 
-| Rank | Risk | Likelihood | Impact | Mitigation |
-|---|---|---:|---:|---|
-| **1** | Arbitrary file write through `/upload` using attacker-controlled filenames | High | High | Sanitize filenames (`secure_filename()`), generate server-side filenames, and store uploads outside the web root. |
-| **2** | No authentication allows spoofing of note owners | High | High | Require user authentication and derive the owner from the authenticated session instead of client input. |
-| **3** | All notes are accessible without authorization | High | High | Implement access control so users can only access their own notes. |
-| **4** | Unlimited file uploads may exhaust disk space | Medium | High | Enforce upload size limits, quotas, and rate limiting. |
-| **5** | Lack of audit logging prevents accountability | Medium | Medium | Implement request and activity logging with timestamps and user identity. |
+Likelihood and impact use a 1–3 scale, where 3 is high. The score is likelihood × impact.
+
+| Rank | Risk | Likelihood | Impact | Score / level | Mitigation |
+|---:|---|---:|---:|---|---|
+| 1 | Arbitrary file write through `/upload` using a client filename | 3 | 3 | 9 / High | Sanitize or replace the filename and keep the save location under a fixed upload root. |
+| 2 | Owner spoofing because there is no authentication | 3 | 3 | 9 / High | Authenticate users and derive `owner` from the authenticated session. |
+| 3 | Notes readable without authorization | 3 | 3 | 9 / High | Authorize every read and filter records by the authenticated user. |
+| 4 | Unlimited uploads exhaust disk or request capacity | 3 | 2 | 6 / Medium | Enforce request-size limits, quotas, and rate limits. |
+| 5 | Missing audit logs prevent reliable attribution | 2 | 2 | 4 / Medium | Log security-relevant actions, results, timestamps, and verified identities. |
+
+## 5. Conclusion
+
+The highest risks come from trusting unauthenticated client input at the Internet-to-Flask boundary. Unsafe upload filenames can allow unintended file writes outside the intended upload directory, while missing note authentication and authorization can cause false ownership and disclosure.
+
+Safe upload naming reduces the highest-ranked file-write risk, but it is only one layer. The application still needs authentication, ownership checks, audit logging, and resource limits to address the remaining threats.
