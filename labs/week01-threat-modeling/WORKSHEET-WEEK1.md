@@ -162,7 +162,7 @@ Automated local verification found that a normal filename still saved, a path-li
 
 ![Task 8 after fix](image-task8-after.png)
 
-TODO-COMMIT-HASH
+Commit hash: 634f8cf
 
 This is an **instance fix** because `secure_filename()` is applied to one endpoint. A class fix would enforce that no user-supplied string ever becomes a path component, for example by generating opaque filenames through a shared storage layer.
 
