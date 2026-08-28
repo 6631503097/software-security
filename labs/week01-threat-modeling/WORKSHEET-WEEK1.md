@@ -166,7 +166,7 @@ Automated local verification found that a normal filename still saved, a path-li
 
 ![Task 8 after fix](image-task8-after.png)
 
-Commit hash: 634f8cf
+Commit: [634f8cf](https://github.com/6631503097/software-security/commit/634f8cf)
 
 This is an **instance fix** because `secure_filename()` is applied to one endpoint. A class fix would enforce that no user-supplied string ever becomes a path component, for example by generating opaque filenames through a shared storage layer.
 
@@ -190,7 +190,7 @@ printf '%s | %s | ' "$(whoami)" '<YOUR-STUDENT-ID>'; date '+%F %T %Z'
 - Task 5 permitted local demonstration: completed and documented above
 - Task 6 NoteVault runtime and DFD check: `image-task6-notevault.png`
 - Task 8 before/after proof: `image-task8-before.png` / `image-task8-after.png`
-- Commit: `634f8cf`
+- Commit: [634f8cf](https://github.com/6631503097/software-security/commit/634f8cf)
 
 **Personalized flag:** Week 1 has no personalized flag.
 
