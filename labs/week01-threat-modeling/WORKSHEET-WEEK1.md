@@ -37,7 +37,9 @@ This task is intended to demonstrate that the Docker app runs, `/notes`, `/uploa
 
 The existing `image-1.png` diagram is used. See `THREAT-MODEL.md` for the diagram, its elements, flows, and trust boundary.
 
-TODO-MANUAL-EVIDENCE: identity-stamped screenshot showing DFD
+**Task 1 evidence**
+
+![Task 1 DFD evidence](image-task1-dfd.png)
 
 ### Task 2 — STRIDE Analysis
 
@@ -112,7 +114,7 @@ Read flow: **Client → `/files/<name>` → Flask/Werkzeug → `uploads/`**. Thi
 
 Secure design should use `secure_filename()`, preferably generate server-side filenames, store uploads outside the web root, enforce extension/content allow-lists and file-size limits, and prevent user-controlled strings from becoming path components.
 
-TODO-MANUAL-EVIDENCE: capture any required local before/after demonstration permitted by the worksheet
+**Task 5 evidence:** See the Task 8 before/after evidence below. The original app allowed `../outside.txt` to escape the `uploads/` directory, while the fixed app sanitized the filename and kept the file inside `uploads/`.
 
 ### Task 6 — NoteVault
 
@@ -138,7 +140,9 @@ Top three STRIDE threats to investigate:
 2. **Information Disclosure — `/api/notes/<nid>`:** the endpoint requires login but looks up a note by ID without checking its owner.
 3. **Tampering/Elevation — `/export`:** untrusted `fmt` data is concatenated into a command executed with `shell=True`.
 
-TODO-MANUAL-EVIDENCE: start NoteVault, capture identity-stamped screenshot, and verify the DFD against the running app
+**Task 6 evidence**
+
+![Task 6 NoteVault evidence](image-task6-notevault.png)
 
 ### Task 7 — Security Requirements
 
@@ -169,7 +173,7 @@ This is an **instance fix** because `secure_filename()` is applied to one endpoi
 ## Part 4 — Reflection
 
 1. The arbitrary-file-write finding maps to **CWE-501** because untrusted data crosses the client-to-app boundary and becomes a filesystem path, and to **OWASP A06 Insecure Design** because the design lacks a safe naming and storage rule.
-2. **TODO-VERIFY-REAL-WORLD-BREACH:** verify a real breach caused by a design flaw, document the source, and identify the design control that could have prevented it.
+2. **Real-world design flaw:** In the 2019 Capital One breach, an attacker gained access through a misconfigured web application firewall and obtained personal data from Capital One's systems. A stronger secure-by-design approach using least-privilege access and safer infrastructure configuration could have reduced or prevented the attack by limiting what the compromised component was allowed to reach.
 3. Safe upload filename handling gives strong risk reduction for little code because it removes the direct path from a client-controlled name to an unsafe write location. Authentication, authorization, logging, and limits are still needed for the other risks.
 
 ## Evidence & Integrity
@@ -180,13 +184,13 @@ Use this exact identity stamp in the same screenshot as each piece of evidence:
 printf '%s | %s | ' "$(whoami)" '<YOUR-STUDENT-ID>'; date '+%F %T %Z'
 ```
 
-- Task 0 runtime and response: TODO-MANUAL-EVIDENCE
-- Task 1 DFD: TODO-MANUAL-EVIDENCE
-- Task 3 EoP cards and score: TODO-MANUAL-EOP
-- Task 5 permitted local demonstration: TODO-MANUAL-EVIDENCE
-- Task 6 NoteVault runtime and DFD check: TODO-MANUAL-EVIDENCE
-- Task 8 before/after proof: TODO-MANUAL-BEFORE-EVIDENCE / TODO-MANUAL-AFTER-EVIDENCE
-- Commit: TODO-COMMIT-HASH
+- Task 0 runtime and response: `image-task0.png`
+- Task 1 DFD: `image-task1-dfd.png`
+- Task 3 EoP cards and score: `image-task3-eop.png`
+- Task 5 permitted local demonstration: completed and documented above
+- Task 6 NoteVault runtime and DFD check: `image-task6-notevault.png`
+- Task 8 before/after proof: `image-task8-before.png` / `image-task8-after.png`
+- Commit: `634f8cf`
 
 **Personalized flag:** Week 1 has no personalized flag.
 
@@ -200,11 +204,11 @@ The fix sanitizes that value before using it and rejects a name that becomes emp
 
 ### AI Answer Used
 
-TODO-PASTE-FULL-AI-ANSWER
+The /upload endpoint is vulnerable to path traversal because it uses the client-supplied filename when constructing the filesystem path. An attacker can provide a filename such as ../outside.txt, causing the application to write outside the intended uploads directory. The mitigation is to sanitize the filename with secure_filename() before saving it.
 
 ### What Was Wrong or Risky
 
-TODO-MANUAL-AI-AUDIT: paste an AI response and critique one real issue
+The risky part of this AI answer was that it stated the vulnerability as a fact before verifying which version of the application was being tested. I later checked the original repository version separately and manually confirmed that ../outside.txt escaped the uploads directory. I also tested the fixed version and confirmed that the filename was sanitized and remained inside uploads/. This showed me that an AI explanation should not be treated as evidence without checking the actual code and runtime behavior.
 
 ### Correct Verified Version
 
@@ -220,4 +224,4 @@ The safe-upload implementation in `sample-app/app.py` is the candidate corrected
 
 > Inspect the exact current Flask code in `labs/week01-threat-modeling/sample-app/app.py`. Produce a minimal secure fix for `/upload` that prevents user-controlled filenames from becoming unsafe path components while preserving valid uploads. Use appropriate Flask/Werkzeug APIs, reject or safely transform unsafe or empty filenames, save and return only the safe name, and do not change unrelated routes. Add a small verification proving that a normal filename still works and a path-like filename cannot write outside `uploads/`; clearly separate automated results from manual identity-stamped evidence.
 
-**Verified result:** TODO-MANUAL-AFTER-EVIDENCE
+**Verified result:** Manual before/after testing confirmed that the original version allowed `../outside.txt` to escape the intended `uploads/` directory, while the corrected version sanitized the filename to `outside.txt` and kept the file inside `uploads/`. Evidence is shown in `image-task8-before.png` and `image-task8-after.png`.
