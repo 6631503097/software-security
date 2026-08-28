@@ -7,7 +7,7 @@
 
 | Name | Student ID | Date | Group |
 |---|---|---|---|
-| `<Wanna-San>` | `<6631503097>` | `<21.8.1016>` | `<->` |
+| `<Wanna-San>` | `<6631503097>` | `<21.8.2026>` | `<->` |
 
 **AI-use disclosure:** AI used for drafting, code review, and structuring answers; all evidence and verification completed manually by the student.
 
