@@ -106,9 +106,13 @@ The true positives map directly to insecure code in the original `app.py`. The l
 **Task 4 — Fuzzing intro (10 min)** · *Goal:* see coverage-guided fuzzing find a bug SAST won't. *Steps:* in the `labs/toolbox` container (Apple clang has no libFuzzer runtime), build `clang -g -fsanitize=address,fuzzer harness.c -o fuzz`, then **seed the corpus** and run it:
 `mkdir -p corpus && printf 'FUZ' > corpus/seed && ./fuzz corpus`. It crashes almost immediately with an AddressSanitizer heap-buffer-overflow at `harness.c:23` (the `data[3]` read with no `size > 3` check). Seeding matters: an unseeded `./fuzz` has to rediscover the magic bytes by chance and often finds nothing for minutes — that unpredictability is itself worth a sentence in your write-up. (The deep fuzzing+exploit lab is Week 11.) *Deliverable:* the ASan crash output (or a screenshot) + a 2-sentence note on why fuzzing finds this bug when a linter/SAST pass over the same 4-line check would not.
 
-Source review shows the root cause at `harness.c:23`: when the input is exactly three bytes long and equals `FUZ`, the code reads `data[3]` without first checking `size > 3`. Coverage-guided fuzzing can keep inputs that pass each nested condition until execution reaches this out-of-bounds read, while a pattern-based static rule may not model this exact input length and control-flow path.
+The seeded libFuzzer run was completed inside the toolbox container with `FUZ` in the seed corpus. AddressSanitizer reported a heap-buffer-overflow at `harness.c:23:21` in `LLVMFuzzerTestOneInput`; the crash input was `FUZ`, and the reproducer was `crash-0eb8e4ed029b774d80f2b66408203801cb982a60`.
 
-TODO-MANUAL-TASK4-FUZZING: run the provided seeded libFuzzer command inside `labs/toolbox` and embed the identity-stamped AddressSanitizer crash output and reproducer filename
+LibFuzzer found a heap-buffer-overflow because the code reads data[3] even when the input contains only three bytes (FUZ). Coverage-guided fuzzing executes real inputs and observes runtime memory errors, so it can expose this boundary bug even when a pattern-based static scan does not report it.
+
+**Task 4 fuzzing evidence**
+
+![Task 4 seeded libFuzzer AddressSanitizer crash](image-task4-fuzzing.png)
 
 **Task 5 — Scan the project target (40 min)** · *Goal:* apply the tools to your term project. *Steps:* run Semgrep + Gitleaks against **NoteVault** (`../../project/starter-app`); also run an SCA scan: `docker run --rm -v "$PWD/../../project/starter-app:/src" aquasec/trivy fs /src`. *Deliverable:* a findings list (tool, file:line/CVE, CWE) — reuse it in your project vuln report.
 
@@ -158,7 +162,19 @@ The provided Week 15 template has separate Semgrep, Trivy, and Gitleaks jobs. It
 
 The Week 2 workflow is implemented at `.github/workflows/week02-security-ci.yml`. It scans `project/starter-app` with Semgrep, Gitleaks, and Trivy; the Semgrep job copies only that target to the runner's temporary directory so the repository-level teaching-lab exclusion cannot skip it. Semgrep and Gitleaks preserve non-zero scanner exit codes, while Trivy uses `severity: HIGH,CRITICAL` with `exit-code: "1"` so those dependency or configuration findings fail the job.
 
-TODO-MANUAL-TASK6-CI-EVIDENCE: run the workflow with `act` or GitHub Actions and embed an identity-stamped screenshot of a genuine failing run
+GitHub Actions run #2 of **Week 2 Security CI** produced the following results:
+
+| Job | Result |
+|---|---|
+| SAST (Semgrep) | Failed |
+| Secret scanning (Gitleaks) | Passed |
+| SCA and configuration scanning (Trivy) | Failed |
+
+Trivy successfully scanned `project/starter-app`. It reported `DS-0002` (HIGH) because the Dockerfile does not specify a non-root `USER`, and `DS-0031` (CRITICAL) for possible exposure of `APP_SECRET` through `ENV` at `Dockerfile:5`. The Trivy job finished with `Process completed with exit code 1`, showing that the HIGH/CRITICAL gate worked.
+
+**GitHub Actions evidence**
+
+![Task 6 Week 2 Security CI run evidence](image-task6-ci.png)
 
 **Task 7 — SAST blind spots (20 min)** · *Goal:* see what scanners miss. *Steps:* find one real bug in `vulnerable-repo/app.py` (or NoteVault) that Semgrep did **not** flag, and explain why a pattern-based tool missed it. *Deliverable:* the bug + a 2-sentence explanation.
 
@@ -204,7 +220,18 @@ I prepared the required fixes in `vulnerable-repo/app.py` and added `argon2-cffi
 - **CWE-327:** Argon2 provides a salted, password-specific hash instead of fast MD5.
 - **CWE-489:** Flask debug mode is disabled.
 
-TODO-MANUAL-VERIFICATION: install the updated requirements, configure non-production test environment variables, run the app locally, rescan it, and capture identity-stamped before/after evidence; no runtime or clean-scan result is claimed here
+The fixed app was tested locally. The `/user` route uses a parameterized query; `/ping` validates the host as an IP address and invokes `ping` without `shell=True`; secrets are loaded from environment variables; password hashing uses Argon2; and Flask runs with `debug=False`.
+
+The final rescans produced:
+
+| Tool | Verified result |
+|---|---|
+| Semgrep | 0 findings, 0 blocking, 2 files scanned |
+| Gitleaks | No leaks found |
+
+**Task 8 rescan evidence**
+
+![Task 8 final Semgrep and Gitleaks rescan](image-task8-rescan.png)
 
 ## Part 4 — Reflection
 1. Map two of your findings to their CWE and to the matching OWASP 2025 category.
@@ -213,7 +240,7 @@ TODO-MANUAL-VERIFICATION: install the updated requirements, configure non-produc
 
 2. Name a real-world breach caused by a hardcoded/leaked secret or an injection flaw, and what control would have caught it pre-release.
 
-   **Answer:** TODO-VERIFY-REAL-WORLD-BREACH
+   **Answer:** In Uber's 2016 data breach, attackers used previously exposed passwords to access Uber's private GitHub repository, found a plaintext AWS access key, and used it to download data from Amazon S3, as documented by the [FTC](https://www.ftc.gov/system/files/documents/federal_register_notices/2018/04/152_3054_uber_revised_consent_analysis_pub_frn.pdf). Secret scanning in CI could have detected the committed key before release. MFA, unique credentials, key rotation, least-privilege access, and a secret manager would also have reduced the likelihood and impact of this hardcoded-secret exposure.
 
 3. Which single tool (SAST vs. secret scanning) gave the highest-value findings on this repo, and why?
 
@@ -237,7 +264,7 @@ TODO-MANUAL-VERIFICATION: install the updated requirements, configure non-produc
   cropped window carries nothing that identifies you, and the lab's own output is
   byte-identical for the whole cohort *by design*, so the stamp is the only thing that makes
   the shot yours. Generic or borrowed evidence is not accepted.
-- **Personalized flag (if this lab issues one):** TODO-MANUAL-PERSONALIZED-FLAG
+- **Personalized flag (if this lab issues one):** N/A — no personalized flag is issued for Week 2 according to the Week 2 course materials.
   *Flags are unique per student — submitting another student's flag is a violation. How to submit: **learn.zcr.ai/submit** (full guide: `SUBMISSION.md` in the repo root).*
 - **Explain in your own words** *(graded on your reasoning, not copied text):*
   1. What did you do, and **why did the vulnerability work**?
@@ -249,15 +276,15 @@ TODO-MANUAL-VERIFICATION: install the updated requirements, configure non-produc
 - Task 1 source and Semgrep findings: `image-task1-code.png`, `image-task1-semgrep-1.png`, and `image-task1-semgrep-2.png`
 - Task 2 Gitleaks findings: `image-task2-gitleaks.png`
 - Task 3 triage: based on the saved `week2-scan.txt` output and the Task 1–2 evidence above
-- Task 4 fuzzing: TODO-MANUAL-TASK4-FUZZING
+- Task 4 fuzzing: `image-task4-fuzzing.png`; reproducer `crash-0eb8e4ed029b774d80f2b66408203801cb982a60`
 - Task 5 NoteVault scans: `image-task5-semgrep.png`, `image-task5-gitleaks.png`, and `image-task5-trivy.png`
-- Task 6 CI workflow/run: `.github/workflows/week02-security-ci.yml` / TODO-MANUAL-TASK6-CI-EVIDENCE
-- Task 8 runtime and rescan: TODO-MANUAL-VERIFICATION
+- Task 6 CI workflow/run: `.github/workflows/week02-security-ci.yml` and `image-task6-ci.png`
+- Task 8 runtime and rescan: manually verified; `image-task8-rescan.png`
 - Commit hash: TODO-MANUAL-COMMIT-HASH
 
 **Explain in my own words:** I ran static and secret scans against the provided lab target, then grouped duplicate warnings by their real root cause. The SQL injection worked because the original `/user` endpoint placed the request's `name` value directly into SQL text, so input could change the meaning of the query.
 
-The parameterized query sends the SQL structure and data separately, and the other fixes remove shell interpretation, hardcoded secrets, MD5, and debug mode. Manual runtime and rescan evidence is still required, and controls such as dependency updates, authorization, logging, and deployment configuration remain outside these five fixes.
+The parameterized query sends the SQL structure and data separately, and the other fixes remove shell interpretation, hardcoded secrets, MD5, and debug mode. The fixed app was tested locally, and the final Semgrep and Gitleaks rescans are recorded in `image-task8-rescan.png`; controls such as dependency updates, authorization, logging, and deployment configuration remain outside these five fixes.
 
 ---
 
@@ -273,15 +300,100 @@ AI is a power tool you must **distrust** — you are graded on your *critique*, 
 
 ### AI answer used
 
-TODO-PASTE-FULL-AI-ANSWER
+Below is a proposed replacement based on the vulnerabilities and endpoint behavior described in the worksheet. It assumes the password endpoint is `/hash`; that route name should be checked against the original file before applying it.
+
+```python
+import ipaddress
+import os
+import sqlite3
+import subprocess
+
+from argon2 import PasswordHasher
+from flask import Flask, jsonify, request
+
+app = Flask(__name__)
+password_hasher = PasswordHasher()
+
+
+def required_secret(name):
+    value = os.environ.get(name)
+    if not value:
+        raise RuntimeError(f"Required environment variable {name} is not set")
+    return value
+
+
+AWS_SECRET_ACCESS_KEY = required_secret("AWS_SECRET_ACCESS_KEY")
+DB_PASSWORD = required_secret("DB_PASSWORD")
+
+
+@app.get("/user")
+def get_user():
+    name = request.args.get("name", "")
+
+    with sqlite3.connect("users.db") as connection:
+        rows = connection.execute(
+            "SELECT * FROM users WHERE name = ?",
+            (name,),
+        ).fetchall()
+
+    return jsonify(rows)
+
+
+@app.get("/ping")
+def ping():
+    host = request.args.get("host", "")
+
+    try:
+        validated_host = str(ipaddress.ip_address(host))
+    except ValueError:
+        return jsonify({"error": "host must be a valid IP address"}), 400
+
+    try:
+        result = subprocess.run(
+            ["ping", "-c", "1", validated_host],
+            capture_output=True,
+            text=True,
+            timeout=5,
+            check=True,
+        )
+    except subprocess.TimeoutExpired:
+        return jsonify({"error": "ping timed out"}), 504
+    except subprocess.CalledProcessError:
+        return jsonify({"error": "host did not respond"}), 502
+
+    return jsonify({"output": result.stdout})
+
+
+@app.post("/hash")
+def hash_password():
+    password = request.form.get("password", "")
+
+    if not password:
+        return jsonify({"error": "password is required"}), 400
+
+    return jsonify({"hash": password_hasher.hash(password)})
+
+
+if __name__ == "__main__":
+    app.run(debug=False)
+```
+
+Why the changes are secure:
+
+- `/user` uses SQLite’s `?` placeholder and passes `name` separately. User input cannot alter the SQL structure.
+- `/ping` accepts only a valid IP address and passes arguments as a list without `shell=True`. Shell metacharacters are therefore neither accepted nor interpreted.
+- Secrets come from environment variables, so credentials are not committed in source code. The application fails closed if either variable is missing.
+- Argon2 is a password-specific, salted, deliberately expensive hashing algorithm. It is substantially safer for passwords than fast MD5.
+- `debug=False` prevents Flask’s interactive debugger from being exposed.
+- The ping operation also has a timeout and controlled error responses, reducing resource-exhaustion and information-disclosure risks.
 
 ### What was wrong or risky
 
-TODO-MANUAL-AI-AUDIT
+The risky part of the AI answer is that it changed parts of the application that were not part of the security fix. It says, “It assumes the password endpoint is /hash,” even though the original Week 2 app has a store\_password(pw) function rather than a /hash route. It also changed the SQLite database name from app.db to users.db. These changes could break the existing application even though the security ideas themselves are mostly correct.
 
 ### Correct verified version
 
-The candidate corrected version is the Task 8 implementation in `vulnerable-repo/app.py`. Its syntax and structure can be checked automatically, but the student must complete `TODO-MANUAL-VERIFICATION` before describing the runtime behavior or rescan as verified.
+The verified fix keeps the original application structure and changes only the insecure behavior. The /user route uses a parameterized SQLite query against app.db, /ping validates the IP address and passes an argument list without shell=True, secrets are loaded from environment variables, store\_password() uses Argon2 instead of MD5, and Flask runs with debug=False. The fixed code was then rescanned with Semgrep and Gitleaks, which reported 0 Semgrep findings and no leaked secrets.
 
 ---
 
@@ -298,4 +410,4 @@ The `/user` endpoint reads a name from the URL and uses it to look up matching d
 
 > Inspect the exact current code in `labs/week02-sdlc-tooling/vulnerable-repo/app.py`. Make a minimal fix for the CWE-89 SQL injection in `/user` by using SQLite's `?` parameter placeholder and passing `name` as a separate one-element tuple. Preserve the endpoint's normal response behavior, close the database connection safely, do not build SQL with formatting or concatenation, and do not change unrelated routes. Show the exact diff and provide a small local verification for both a normal name and an SQL-like input, clearly separating automated output from identity-stamped manual evidence.
 
-**Verified result:** TODO-MANUAL-VERIFICATION
+**Verified result:** The fixed app was tested locally with the `/user` parameterized query and the other Task 8 controls in place. The final Semgrep rescan reported 0 findings, 0 blocking, and 2 files scanned, while Gitleaks reported no leaks; see `image-task8-rescan.png`.
