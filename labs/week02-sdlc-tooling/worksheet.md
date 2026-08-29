@@ -280,7 +280,7 @@ The final rescans produced:
 - Task 5 NoteVault scans: `image-task5-semgrep.png`, `image-task5-gitleaks.png`, and `image-task5-trivy.png`
 - Task 6 CI workflow/run: `.github/workflows/week02-security-ci.yml` and `image-task6-ci.png`
 - Task 8 runtime and rescan: manually verified; `image-task8-rescan.png`
-- Commit hash: TODO-MANUAL-COMMIT-HASH
+- Commit hash: 7ee2fa8
 
 **Explain in my own words:** I ran static and secret scans against the provided lab target, then grouped duplicate warnings by their real root cause. The SQL injection worked because the original `/user` endpoint placed the request's `name` value directly into SQL text, so input could change the meaning of the query.
 
