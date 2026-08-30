@@ -238,7 +238,7 @@ The final script implements Argon2id storage and verification, legacy MD5 migrat
 - Task 7: `image-task7-gcm.png`
 - Task 8: `image-task8-tls.png`
 - Task 9: `image-task9-fixed.png`
-- Commit hash: TODO-MANUAL-COMMIT-HASH
+- Commit hash: 7a16d3e
 
 **My explanation:** I ran the vulnerable examples, recovered the supplied and NoteVault MD5 passwords, demonstrated ECB's repeated blocks, generated the small reset tokens, and located the source-code key. These attacks worked because MD5 permits cheap offline guesses, ECB deterministically exposes repeated blocks, the token has only one million possibilities and uses non-cryptographic randomness, and anyone with source access receives the same encryption key.
 
