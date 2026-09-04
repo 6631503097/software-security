@@ -47,16 +47,20 @@
 
 One block per finding (copy as needed):
 
-### Finding F-01 — <title>
+### Finding F-01 — Unsalted MD5 Password Hashing
 | Field | Value |
 |---|---|
-| CWE | CWE-___ |
-| OWASP 2025 | A__ / API__ / LLM__ |
-| Severity | Critical / High / Medium / Low |
-| Location | file:line or endpoint |
-| Reproduction | step-by-step (payload/command) |
-| Impact | what an attacker gains |
-| Evidence | screenshot / request-response |
+| CWE | CWE-916 / CWE-327 |
+| OWASP 2025 | A04 Cryptographic Failures |
+| Severity | High |
+| Location | `project/starter-app/app.py:67-69`, `116-117`, and `128-130` |
+| Reproduction | Obtain the two unsalted MD5 values from NoteVault's `seed()` data and run Hashcat in raw-MD5 mode (`hashcat -m 0`). The Week 3 exercise recovered both seeded passwords through offline guessing. |
+| Impact | Anyone who obtains the user table can test password guesses quickly without contacting the application. Recovered passwords can compromise NoteVault accounts and may create additional risk if a user reused the same password elsewhere. |
+| Evidence | Week 3 Hashcat result shown below |
+
+**Recommended mitigation:** Replace MD5 with Argon2id for new passwords and use rehash-on-login to migrate a correctly verified legacy MD5 record. Argon2id applies a unique salt and deliberately expensive time and memory costs, making offline guessing substantially harder.
+
+![NoteVault seeded password hashes recovered in the authorized Week 3 lab](../labs/week03-cryptography/image-task5-notevault-hashes.png)
 
 ---
 

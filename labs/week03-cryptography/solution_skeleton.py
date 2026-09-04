@@ -22,7 +22,11 @@ def verify_password(hash_: str, pw: str) -> bool:
 
 def verify_and_migrate(stored_hash: str, pw: str) -> tuple[bool, str, bool]:
     if stored_hash.startswith("$argon2"):
-        return verify_password(stored_hash, pw), stored_hash, False
+        if not verify_password(stored_hash, pw):
+            return False, stored_hash, False
+        if ph.check_needs_rehash(stored_hash):
+            return True, store_password(pw), True
+        return True, stored_hash, False
 
     legacy_md5 = hashlib.md5(pw.encode()).hexdigest()
 
