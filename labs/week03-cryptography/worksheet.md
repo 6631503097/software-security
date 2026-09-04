@@ -9,7 +9,7 @@
 ## Part 1 — Student Information
 | Name | Student ID | Date | Group |
 |---|---|---|---|
-| Wanna-San | 6631503097 | 2026-08-30 | - |
+| Wanna-San | 6631503097 | 2026-08-30 | The Outsider |
 
 **AI-use disclosure:** AI was used for drafting, code review, and structuring answers. Runtime execution, evidence capture, and verification were completed manually by the student.
 
@@ -55,7 +55,7 @@ Targets: `vulnerable_crypto.py` (the misuses), `hashes.txt` (four unsalted MD5s)
 
 **Task 0 — Onboarding (5 min)** · *Goal:* see the misuse output. *Steps:* run `python vulnerable_crypto.py`; note the md5 digest, the identical ECB ciphertext blocks, and the short token. *Deliverable:* screenshot of the program output.
 
-I ran `vulnerable_crypto.py` inside the Docker lab. The output showed an MD5 digest, repeated AES-ECB ciphertext blocks, and a six-digit token, confirming the three visible misuse examples.
+I ran `vulnerable_crypto.py` inside the Docker lab. The output showed an MD5 digest, repeated AES-ECB ciphertext blocks, and a six-digit token, confirming the three visible misuse examples. The password digest should use Argon2id, encrypted data should use AES-GCM with a fresh nonce and authentication tag, and key material should be injected securely instead of hardcoded. Reset tokens should use `secrets` with enough entropy to make guessing impractical.
 
 ![Task 0 — vulnerable crypto program output with identity evidence](image-task0-crypto.png)
 
@@ -121,7 +121,11 @@ def verify_password(hash_: str, pw: str) -> bool:
 
 def verify_and_migrate(stored_hash: str, pw: str) -> tuple[bool, str, bool]:
     if stored_hash.startswith("$argon2"):
-        return verify_password(stored_hash, pw), stored_hash, False
+        if not verify_password(stored_hash, pw):
+            return False, stored_hash, False
+        if ph.check_needs_rehash(stored_hash):
+            return True, store_password(pw), True
+        return True, stored_hash, False
 
     legacy_md5 = hashlib.md5(pw.encode()).hexdigest()
     if hmac.compare_digest(legacy_md5, stored_hash):
@@ -131,7 +135,7 @@ def verify_and_migrate(stored_hash: str, pw: str) -> tuple[bool, str, bool]:
     return False, stored_hash, False
 ```
 
-`store_password()` now calls Argon2's password hasher, and `verify_password()` verifies the encoded Argon2 value. `verify_and_migrate()` recognizes an existing Argon2 hash; otherwise it compares the legacy MD5 with `hmac.compare_digest` and, after a valid login, returns a new Argon2id hash for storage.
+`store_password()` now calls Argon2's password hasher, and `verify_password()` verifies the encoded Argon2 value. `verify_and_migrate()` upgrades a valid legacy MD5 login to Argon2id and also refreshes a valid Argon2 hash when `check_needs_rehash()` reports that its parameters are outdated.
 
 | Manual migration check | Result |
 |---|---|
@@ -145,6 +149,30 @@ Migration matters because forcing every user to reset a password at once is disr
 ![Task 6 — successful legacy MD5 to Argon2id migration](image-task6-migration.png)
 
 **Task 7 — Authenticated encryption round-trip (20 min)** · *Goal:* use AEAD correctly. *Steps:* encrypt+decrypt a message with **AES-GCM** using a random 12-byte nonce and a key from an env var; then flip one ciphertext byte and show decryption **fails** (tag check). *Deliverable:* the round-trip output + the tampered-fails proof.
+
+I used the following reproducible test procedure. It generates an ephemeral key, passes it through `ENC_KEY_HEX`, performs the round trip, flips the first ciphertext byte, and checks that authenticated decryption rejects the change.
+
+```bash
+docker compose run --rm -e ENC_KEY_HEX="$(openssl rand -hex 32)" crypto-lab bash -c "pip install --quiet pycryptodome argon2-cffi >/dev/null 2>&1 && python - <<'PY'
+import os
+from solution_skeleton import encrypt_gcm, decrypt_gcm
+
+key = bytes.fromhex(os.environ['ENC_KEY_HEX'])
+plaintext = b'Week 3 AES-GCM test'
+nonce, ciphertext, tag = encrypt_gcm(plaintext, key)
+print('round trip:', decrypt_gcm(nonce, ciphertext, tag, key) == plaintext)
+print('nonce length:', len(nonce))
+print('tag length:', len(tag))
+tampered = bytearray(ciphertext)
+tampered[0] ^= 1
+try:
+    decrypt_gcm(nonce, bytes(tampered), tag, key)
+    print('tampered accepted:', True)
+except ValueError:
+    print('tampered accepted:', False)
+    print('tag check: FAILED as expected')
+PY"
+```
 
 | AES-GCM check | Result |
 |---|---|
@@ -220,8 +248,8 @@ The final script implements Argon2id storage and verification, legacy MD5 migrat
   cropped window carries nothing that identifies you, and the lab's own output is
   byte-identical for the whole cohort *by design*, so the stamp is the only thing that makes
   the shot yours. Generic or borrowed evidence is not accepted.
-- **Personalized flag (if this lab issues one):** N/A — no personalized flag issued for Week 3 according to the Week 3 course materials.
-  *Flags are unique per student — submitting another student's flag is a violation. How to submit: **learn.zcr.ai/submit** (full guide: `SUBMISSION.md` in the repo root).*
+- **Personalized flag (if this lab issues one):** Personalized flag captured and submitted successfully through CTFd; flag omitted from the repository.
+  *Flags are unique per student — submitting another student's flag is a violation. This is a personal completion record only; the flag itself is scored in the **`ctf.zcr.ai`** challenge, while the worksheet PDF is submitted separately through **learn.zcr.ai/submit**.*
 - **Explain in your own words** *(graded on your reasoning, not copied text):*
   1. What did you do, and **why did the vulnerability work**?
   2. **Why does your fix actually stop it** — and what could still break it?
@@ -238,7 +266,7 @@ The final script implements Argon2id storage and verification, legacy MD5 migrat
 - Task 7: `image-task7-gcm.png`
 - Task 8: `image-task8-tls.png`
 - Task 9: `image-task9-fixed.png`
-- Commit hash: 7a16d3e
+- Commit hash: (https://github.com/6631503097/software-security/commit/6b639d15e337ec736d21f6c7d2fb33f52c4a15f1)
 
 **My explanation:** I ran the vulnerable examples, recovered the supplied and NoteVault MD5 passwords, demonstrated ECB's repeated blocks, generated the small reset tokens, and located the source-code key. These attacks worked because MD5 permits cheap offline guesses, ECB deterministically exposes repeated blocks, the token has only one million possibilities and uses non-cryptographic randomness, and anyone with source access receives the same encryption key.
 
@@ -262,11 +290,33 @@ AI is a power tool you must **distrust** — you are graded on your *critique*, 
 
 ### What Was Wrong or Risky
 
-The answer correctly explains how to migrate a verified legacy MD5 password to Argon2id, which matches the migration tested in Task 6. However, it only calls `verify()` for an existing Argon2 hash and does not call `ph.check_needs_rehash(stored_hash)`, so a hash made with older or weaker parameters could remain unchanged after the application's settings improve. After successful Argon2 verification, the application should check whether rehashing is needed and, when it is, create a fresh value with `ph.hash(password)` and update the stored hash; this is an additional improvement and was not part of the manual MD5-to-Argon2 test.
+The risky line is: “For users who already have an Argon2 hash, verify it with PasswordHasher().verify().” The answer correctly explains legacy MD5 migration, but verification alone does not upgrade an Argon2 hash created with older or weaker parameters. After a successful Argon2 verification, the application should call `ph.check_needs_rehash(stored_hash)` and replace the stored value with `ph.hash(password)` when it returns `True`.
 
 ### Correct Verified Version
 
-The manually verified Task 6 result covers migration from legacy MD5 to Argon2id. A complete production approach should also call `ph.check_needs_rehash(stored_hash)` after a successful Argon2 verification and replace the stored value with `ph.hash(password)` when needed; this Argon2-parameter upgrade is a recommended correction, but it was not part of the manual Task 6 verification.
+I updated `verify_and_migrate()` so a valid existing Argon2 hash is checked with `ph.check_needs_rehash()`, rehashed with the current settings when necessary, and returned for database replacement. I verified this separately from the earlier MD5 migration by creating an Argon2 hash with lower parameters (`time_cost=1`, `memory_cost=8192`, `parallelism=1`) and testing it against the current application hasher.
+
+```bash
+docker compose run --rm crypto-lab bash -c "pip install --quiet pycryptodome argon2-cffi >/dev/null 2>&1 && python - <<'PY'
+from argon2 import PasswordHasher
+from importlib.metadata import version
+from solution_skeleton import ph, verify_and_migrate
+
+password = 'upgrade-test-password'
+old_ph = PasswordHasher(time_cost=1, memory_cost=8192, parallelism=1)
+old_hash = old_ph.hash(password)
+print('argon2-cffi version:', version('argon2-cffi'))
+print('old hash verifies:', old_ph.verify(old_hash, password))
+print('old hash needs rehash:', ph.check_needs_rehash(old_hash))
+valid, new_hash, migrated = verify_and_migrate(old_hash, password)
+print('login valid:', valid)
+print('rehash performed:', migrated)
+print('hash changed:', new_hash != old_hash)
+print('new hash needs rehash:', ph.check_needs_rehash(new_hash))
+PY"
+```
+
+The test used `argon2-cffi 25.1.0` and returned `True` for verification, the initial rehash check, login validity, rehash performed, and hash changed. The fresh hash returned `False` for `new hash needs rehash`, confirming that it uses the current parameters. This test does not replace or overstate the separately verified MD5-to-Argon2 migration shown in Task 6.
 
 ---
 
