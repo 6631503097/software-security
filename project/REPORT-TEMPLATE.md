@@ -96,6 +96,23 @@ One block per finding (copy as needed):
 
 ---
 
+### Finding F-04 — IDOR in Note API
+| Field | Value |
+|---|---|
+| CWE | CWE-639 |
+| OWASP 2025 | A01 Broken Access Control |
+| Severity | High |
+| Location | Original vulnerable endpoint: `project/starter-app/app.py:163-170`. Fixed ownership check: `app.py:163-175`. |
+| Reproduction | Start NoteVault with `TEAM_ID='The Outsider' docker compose up --build -d`, sign in as `alice`, save the issued cookie in a local cookie jar, and request `/api/notes/1` followed by `/api/notes/3` with that authenticated session. No session token is included in this report. |
+| Impact | Any authenticated user could change the numeric note ID and read another user's note, including admin-owned data. This exposes private note contents despite successful authentication. |
+| Evidence | Before the fix, Alice's request to note 1 returned her `groceries` note (`milk, eggs`), while the same session requesting note 3 returned the admin-owned `build-tag` note containing the team marker `25cd56dbd1ac`. |
+
+**Recommended mitigation:** Store the authenticated user once, fetch the requested note, and return it only when its `owner` equals that user. Return 401 when unauthenticated, 404 when the note does not exist, and 403 when a signed-in user does not own it.
+
+**Related source observation:** `current_user()` currently lists both `HS256` and `none` at `app.py:79-87`. This was identified by source review but was not separately exploited or verified in the NoteVault environment, so it is not presented as an additional project finding here.
+
+---
+
 ## 5. Remediation  *(25 pts)*
 
 Per finding: the fix, **before/after** code, and the commit that implements it.
@@ -155,6 +172,29 @@ Per finding: the fix, **before/after** code, and the commit that implements it.
 - **Commit:** https://github.com/6631503097/software-security/commit/2d43d97
 - **Proof the exploit now fails:** The rebuilt NoteVault container returned HTTP 302 for normal login and note creation, and a normal note still appeared correctly. The stored payload appeared as escaped text on both home and search, with no executable payload element; an isolated browser check confirmed zero matching executable scripts and an empty `document.cookie` after login because the session cookie was HttpOnly.
 - **Fixed-state verification:** No fixed-state screenshot is claimed. Genuine runtime testing confirmed that normal login and notes still worked, the stored payload rendered only as text on home and search, no executable payload element remained, and the HttpOnly session cookie was absent from `document.cookie` with SameSite=Lax set.
+
+---
+
+### Fix for F-04
+```diff
+ def api_note(nid):
+-    if not current_user():
++    user = current_user()
++    if not user:
+         return jsonify(error="auth required"), 401
+     con = db()
+     r = con.execute("SELECT id,owner,title,body FROM notes WHERE id = ?", (nid,)).fetchone()
+     con.close()
+-    return (jsonify(dict(r)) if r else (jsonify(error="not found"), 404))
++    if not r:
++        return jsonify(error="not found"), 404
++    if r["owner"] != user:
++        return jsonify(error="forbidden"), 403
++    return jsonify(dict(r))
+```
+- **Why this fixes it:** Authentication and authorization are now separate checks. Even when a valid session supplies a real note ID, the endpoint returns the note only if its stored owner matches the authenticated user.
+- **Commit:** `<ADD AFTER THE NoteVault F-04 FIX IS COMMITTED>`
+- **Proof the exploit now fails:** The rebuilt NoteVault container preserved normal behavior: Alice's login returned HTTP 302, and `/api/notes/1` returned her `groceries` note with HTTP 200. With the same authenticated session, `/api/notes/3` returned only `{"error":"forbidden"}` with HTTP 403; the response contained no admin owner, title, team marker, or note body.
 
 ---
 
