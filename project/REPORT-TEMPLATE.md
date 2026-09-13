@@ -193,7 +193,7 @@ Per finding: the fix, **before/after** code, and the commit that implements it.
 +    return jsonify(dict(r))
 ```
 - **Why this fixes it:** Authentication and authorization are now separate checks. Even when a valid session supplies a real note ID, the endpoint returns the note only if its stored owner matches the authenticated user.
-- **Commit:** `<ADD AFTER THE NoteVault F-04 FIX IS COMMITTED>`
+- **Commit:** (https://github.com/6631503097/software-security/commit/9889762)
 - **Proof the exploit now fails:** The rebuilt NoteVault container preserved normal behavior: Alice's login returned HTTP 302, and `/api/notes/1` returned her `groceries` note with HTTP 200. With the same authenticated session, `/api/notes/3` returned only `{"error":"forbidden"}` with HTTP 403; the response contained no admin owner, title, team marker, or note body.
 
 ---

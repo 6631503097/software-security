@@ -229,4 +229,4 @@ AI is a power tool you must **distrust** — you are graded on your *critique*, 
 
 **Verified result:** With the fixed app, a fresh Alice token requesting Bob's order 2 returned `{"error":"forbidden"}` and HTTP 403.
 
-**FINAL WEEK 6 COMMIT LINK:** `<ADD AFTER FINAL COMMIT>`
+**FINAL WEEK 6 COMMIT LINK:** (https://github.com/6631503097/software-security/commit/9889762)
