@@ -1,0 +1,8 @@
+{
+  "command": [
+    "/private/tmp/week12-task4-hash-20261024/bin/pip",
+    "config",
+    "debug"
+  ],
+  "exit_status": 0
+}

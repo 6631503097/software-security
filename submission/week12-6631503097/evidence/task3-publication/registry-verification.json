@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-24T09:07:49.180207+00:00",
+  "registry_http_status": 200,
+  "content_type": "application/vnd.oci.image.index.v1+json",
+  "push_digest": "sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "registry_header_digest": "sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "computed_manifest_digest": "sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "matches_verified_local_image": true,
+  "immutable_reference": "ghcr.io/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "platform_manifests": [
+    {
+      "digest": "sha256:9d597777a151702a5bedfe5fefba850003a84598769cfce8816671225ff793df",
+      "platform": {
+        "architecture": "arm64",
+        "os": "linux"
+      }
+    },
+    {
+      "digest": "sha256:06bb8096bafb0f35da94a8c4ce6c80cae1ee2f0726fca0dacb509eb4280e25e6",
+      "platform": {
+        "architecture": "unknown",
+        "os": "unknown"
+      }
+    }
+  ]
+}

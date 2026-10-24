@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/private/tmp/week12-sbom-validation/bin/python",
+    "submission/week12-6631503097/support/validate-sbom.py"
+  ],
+  "exit_status": 0,
+  "initial_attempt": {
+    "exit_status": 1,
+    "failure": "cyclonedx.org schema download returned HTTP 403; retained stderr; retried official CycloneDX GitHub schema source"
+  }
+}

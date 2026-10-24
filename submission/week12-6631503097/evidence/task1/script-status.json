@@ -1,0 +1,5 @@
+{
+  "command": "bash sca_scan.sh",
+  "exit_status": 0,
+  "note": "Individual Docker exit statuses in process-status.jsonl; instructor script masks failures."
+}

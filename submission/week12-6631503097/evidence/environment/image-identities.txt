@@ -1,0 +1,5 @@
+$ docker image inspect aquasec/trivy:latest python:3.9-slim --format '{{.Id}} {{json .RepoDigests}}'
+sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969 ["aquasec/trivy@sha256:62b1e65e8869bc4b4c6aa4fa2b21595256c7c2f6018a9d9ad61caf87187c1969"]
+sha256:2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b ["python@sha256:2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b"]
+
+exit_status=0

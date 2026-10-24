@@ -1,0 +1,10 @@
+{
+  "prepared_utc": "2026-10-24T09:21:24.947380+00:00",
+  "image": "ghcr.io/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "certificate_identity": "6631503097@lamduan.mfu.ac.th",
+  "certificate_oidc_issuer": "https://github.com/login/oauth",
+  "identity_source": "Student-confirmed verified GitHub email; certificate not yet issued or observed",
+  "signing_authorized": false,
+  "oidc_authorized": false,
+  "instruction": "Preparation only; stop on actual certificate mismatch rather than widening policy."
+}

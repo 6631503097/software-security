@@ -1,0 +1,2137 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "schema_validation": "PASS",
+  "jsonschema_version": "4.26.0",
+  "validation_errors": [],
+  "schemas": [
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/bom-1.7.schema.json",
+      "sha256": "73308edec3ab2d38bfffd993e96a042b594314143b6971a6e9ed98bbb6bd76ce"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/spdx.schema.json",
+      "sha256": "4b345e2329f209f34e960ae2a8e7cb46a166907e6a45e94978565925dc47b359"
+    }
+  ],
+  "total_components": 119,
+  "component_types": {
+    "library": 118,
+    "operating-system": 1
+  },
+  "purl_ecosystems": {
+    "pkg:pypi": 31,
+    "": 1,
+    "pkg:deb": 87
+  },
+  "dependency_nodes": 120,
+  "source_image_id": "sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "sbom_image_id": "sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "image_id_matches": true,
+  "platform": "linux/arm64",
+  "flask": [
+    {
+      "bom-ref": "pkg:pypi/flask@1.1.4",
+      "type": "library",
+      "name": "Flask",
+      "version": "1.1.4",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "caefbe085934d955994ee9bc9d8e4e86cb79c081"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:pypi/flask@1.1.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:FilePath",
+          "value": "usr/local/lib/python3.9/site-packages/Flask-1.1.4.dist-info/METADATA"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7fea9f1730c32a1c23ed5e96237c85d7e00d0520eafba76407deb7d1633ac461"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8c8e576cc9079225b778673cb43c1d96d5d21b3e57ed107a55d4265bc07d4a31"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "python-pkg"
+        }
+      ]
+    }
+  ],
+  "sbom_sha256": "d5df53e8007b432c18f12c5e200af978f422b438673f84199caeaad99451b9a7"
+}

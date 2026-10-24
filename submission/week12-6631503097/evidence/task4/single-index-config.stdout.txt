@@ -1,0 +1,10 @@
+env_var:
+  PIP_CONFIG_FILE='/dev/null'
+  PIP_DISABLE_PIP_VERSION_CHECK='1'
+  PIP_NO_CACHE_DIR='1'
+env:
+  /dev/null, exists: True
+global:
+  /Library/Application Support/pip/pip.conf, exists: False
+site:
+  /private/tmp/week12-task4-hash-20261024/pip.conf, exists: False

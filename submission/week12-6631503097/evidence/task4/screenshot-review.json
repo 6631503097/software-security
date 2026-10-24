@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/private/tmp/software-security-wk12/submission/week12-6631503097/evidence/screenshots/task4-hashes-single-index.png",
+    "status": "ACCEPTED: visually verified original full-screen Terminal capture with exact worksheet identity command/output and genuine results",
+    "sha256": "6a929a85f47fc77c1969f93e11023974bae2dc3e4c8e61b1ce1dac8ddcee2eb3"
+  },
+  {
+    "path": "/private/tmp/software-security-wk12/submission/week12-6631503097/evidence/screenshots/task4-signature-gate-confirmed.png",
+    "status": "ACCEPTED: visually verified original full-screen Terminal capture with exact worksheet identity command/output and genuine results",
+    "sha256": "d35702c0752336e816f007f6787340253db4eac6a4da5f53538d45dd60b9a1b3"
+  },
+  {
+    "path": "/private/tmp/software-security-wk12/submission/week12-6631503097/evidence/screenshots/task4-signature-gate.png",
+    "status": "REJECTED: another application was foreground; no required Terminal evidence. Original preserved, excluded from accepted evidence."
+  }
+]

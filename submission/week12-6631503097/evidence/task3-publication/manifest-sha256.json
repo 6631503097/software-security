@@ -1,0 +1,16 @@
+{
+  "captures.jsonl": "514d266cef56b27e9f0d4d071c09e17e74f5a33fd6f95fbec5d3d231d6ddf3d7",
+  "immediate-visibility.json": "8bd4e6c49a649629093e83b7f7000919e9e07f5aeada86aaff2f0916e1dd5cbc",
+  "instructor-integrity.txt": "0cf7e18300127011ef70c25a36894a4323d22fd29b9c1a6b19e510723a9b4f56",
+  "local-image-inspect.json": "90e99c535791596af887c06384bbdd23ba32d88c679fc8c08d847babc466048c",
+  "prepush-check.json": "d2ceaf05dfbd1902ca11ec1e2aab35fd01c506a225cebe3f7727ebedb22d96bb",
+  "push-status.json": "ea8a41414c2ca069b796641f91c968434aee04a16cf5843c15f848382e336b54",
+  "push.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "push.stdout.txt": "442b99a318e36e05b1ccf4e85825f3c0d3698404820b7154fca31ec6108ae0b7",
+  "registry-manifest.json": "f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "registry-verification.json": "e35fe237b1b9ff18b80e64fced9751296faaf7c1c9886edd9c8297e119efe6e9",
+  "screenshot-review.json": "d55e3ea153020ff7a6aa03ee1e7a70a831de75afcd7725afca275a3fc72de096",
+  "tag-status.json": "f1c31e5d289710adc64e670410519d73a671ebb5446e51389d64f768fef02aa8",
+  "tag.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tag.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

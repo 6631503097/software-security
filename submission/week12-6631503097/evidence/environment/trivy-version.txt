@@ -1,0 +1,4 @@
+$ docker run --rm aquasec/trivy:latest --version
+Version: 0.74.0
+
+exit_status=0

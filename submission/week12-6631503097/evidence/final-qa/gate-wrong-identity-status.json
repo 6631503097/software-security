@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bash",
+    "tmp/week12-final-qa/gate-wrong-identity.sh"
+  ],
+  "source_gate": "support/task4-verification-gate.sh",
+  "single_fixture_change": "IDENTITY='unauthorized-signer@example.invalid'",
+  "exit_status": 1,
+  "started_utc": "2026-10-24T14:11:38.735535+00:00",
+  "finished_utc": "2026-10-24T14:11:44.927558+00:00",
+  "deployment_executed": false,
+  "original_script_modified": false,
+  "stdout_contains_allow": false,
+  "stderr_contains_deny": true
+}

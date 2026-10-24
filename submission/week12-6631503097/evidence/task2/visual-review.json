@@ -1,0 +1,55 @@
+{
+  "accepted": [
+    {
+      "path": "/private/tmp/software-security-wk12/submission/week12-6631503097/evidence/screenshots/task2-attack-merged-attempt3.png",
+      "status": "accepted: visually verified real Chrome attack/merged 1.4.0 vs 99.0.0 and exact identity command/output, side by side",
+      "capture_time_from_original_png_mtime": "2026-10-24T14:07:13.275481+07:00",
+      "sha256": "c141252612f5b4918c9595ea8cf8e7f9ec24e18b6fd935ca1d89ce0edd55bb75",
+      "method": "Full-screen /usr/sbin/screencapture -x; no image edits"
+    },
+    {
+      "path": "/private/tmp/software-security-wk12/submission/week12-6631503097/evidence/screenshots/task2-single-index-confirmed.png",
+      "status": "accepted; visually verified private 1.4.0/public 99.0.0, single index, private 1.4.0 safe; exact identity command/output beside Chrome",
+      "capture_finished_bangkok": "2026-10-24T14:56:09.829440+07:00",
+      "sha256": "5d708c2f6f8cde9a5324e24828336ea6e23720cbfe43bc087a02d0ced350af54"
+    },
+    {
+      "path": "/private/tmp/software-security-wk12/submission/week12-6631503097/evidence/screenshots/task2-race-confirmed.png",
+      "status": "accepted; visually verified real Chrome private 2.0.0/public 1.9.0, merged mode, PRIVATE \u2014 safe this time, exact identity command/output beside it",
+      "capture_finished_bangkok": "2026-10-24T14:59:27.318136+07:00",
+      "sha256": "172fa1e7b9db2abcf5cd28122797d89cf28847da94736a13c6b01646d613594a"
+    }
+  ],
+  "rejected": [
+    {
+      "file": "task2-attack-merged-attempt2.png",
+      "reason": "No terminal, obscured verdict, wrong preset, or foreground application changed; not valid task evidence"
+    },
+    {
+      "file": "task2-rejected-no-terminal.png",
+      "reason": "No terminal, obscured verdict, wrong preset, or foreground application changed; not valid task evidence"
+    },
+    {
+      "file": "task2-keyboard-check.png",
+      "reason": "No terminal, obscured verdict, wrong preset, or foreground application changed; not valid task evidence"
+    },
+    {
+      "file": "task2-attack-merged.png",
+      "reason": "No terminal, obscured verdict, wrong preset, or foreground application changed; not valid task evidence"
+    },
+    {
+      "file": "task2-single-index.png",
+      "reason": "No terminal, obscured verdict, wrong preset, or foreground application changed; not valid task evidence"
+    },
+    {
+      "file": "task2-single-index-attempt2.png",
+      "reason": "No terminal, obscured verdict, wrong preset, or foreground application changed; not valid task evidence"
+    },
+    {
+      "file": "task2-single-index-manual.png",
+      "reason": "Visually verified screenshot still shows merged mode and public 99.0.0, not the requested single-index outcome."
+    }
+  ],
+  "blocker": null,
+  "status": "Task 2: all three required full-screen Chrome screenshots visually verified; originals unmodified."
+}

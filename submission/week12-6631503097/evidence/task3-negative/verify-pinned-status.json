@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/private/tmp/week12-tools/cosign/v3.1.4/cosign",
+    "verify",
+    "--certificate-identity-regexp",
+    ".*",
+    "--certificate-oidc-issuer-regexp",
+    ".*",
+    "index.docker.io/library/python@sha256:2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b"
+  ],
+  "exit_status": 10,
+  "started_utc": "2026-10-24T09:34:16.689832+00:00",
+  "finished_utc": "2026-10-24T09:34:21.182888+00:00"
+}

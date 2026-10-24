@@ -1,0 +1,6 @@
+{
+  "path": "/private/tmp/software-security-wk12/submission/week12-6631503097/evidence/screenshots/task3-private-ghcr-publication.png",
+  "visual_review": "PASS: real full-screen Terminal capture; exact identity command/output visible with genuine push output, private API visibility and independent digest verification",
+  "capture_finished_bangkok": "2026-10-24T16:08:20.720510+07:00",
+  "sha256": "2b5ddf0983a4073da4ae288186145d69821cde212ef7f0e013ab08bf565141b3"
+}

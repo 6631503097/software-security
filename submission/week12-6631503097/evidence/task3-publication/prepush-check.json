@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-10-24T09:07:05.764799+00:00",
+  "local_id": "sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "expected_id_matches": true,
+  "account": "6631503097",
+  "package_listing_http": 200,
+  "target_metadata_http": 404,
+  "target_absent": true,
+  "approved_destination": "ghcr.io/6631503097/week12-supplychain:lab"
+}

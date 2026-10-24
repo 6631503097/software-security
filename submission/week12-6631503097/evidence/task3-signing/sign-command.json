@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/private/tmp/week12-tools/cosign/v3.1.4/cosign",
+    "sign",
+    "--yes",
+    "--fulcio-auth-flow",
+    "normal",
+    "--oidc-disable-ambient-providers",
+    "--bundle",
+    "/private/tmp/software-security-wk12/submission/week12-6631503097/evidence/task3-signing/image.sigstore.json",
+    "ghcr.io/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6"
+  ],
+  "authorization": "Explicit student approval for exact recorded digest, GitHub OIDC, email and public log; --yes applies only that already-given consent. normal forces browser flow.",
+  "expected_identity": "6631503097@lamduan.mfu.ac.th",
+  "expected_issuer": "https://github.com/login/oauth",
+  "started_utc": "2026-10-24T09:24:19.093210+00:00"
+}

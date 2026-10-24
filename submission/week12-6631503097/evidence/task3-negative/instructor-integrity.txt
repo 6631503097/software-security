@@ -1,0 +1,1 @@
+PASS: all recorded instructor Week 12 hashes unchanged. Original wk06 worktree not written.

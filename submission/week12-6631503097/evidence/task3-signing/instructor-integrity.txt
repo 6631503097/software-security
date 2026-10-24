@@ -1,0 +1,1 @@
+PASS: recorded instructor file SHA-256 hashes unchanged. No writes to original wk06 worktree.

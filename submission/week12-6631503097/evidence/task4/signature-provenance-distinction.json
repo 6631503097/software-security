@@ -1,0 +1,8 @@
+{
+  "observed_signature_predicate_type": "https://sigstore.dev/cosign/sign/v1",
+  "observed_signature_predicate": {},
+  "slsa_provenance_predicate_expected": "https://slsa.dev/provenance/v1",
+  "full_slsa_build_provenance_policy_verified": false,
+  "slsa_level_claimed": null,
+  "note": "Earlier BuildKit attestation descriptor exists, but its contents, builder trust and compliance with SLSA requirements were not assessed. Presence alone proves no level."
+}

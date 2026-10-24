@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/private/tmp/week12-task4-hash-20261024/bin/pip",
+    "install",
+    "--require-hashes",
+    "-r",
+    "requirements.txt"
+  ],
+  "cwd": "/private/tmp/software-security-wk12/labs/week12-supply-chain",
+  "exit_status": 1,
+  "started_utc": "2026-10-24T13:58:42.403633+00:00",
+  "finished_utc": "2026-10-24T13:58:44.463964+00:00",
+  "environment": {
+    "PATH": "/private/tmp/week12-task4-hash-20261024/bin:/usr/bin:/bin",
+    "PIP_CONFIG_FILE": "/dev/null",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PIP_NO_CACHE_DIR": "1",
+    "LC_ALL": "C"
+  },
+  "note": "Isolated disposable venv, all inherited PIP_* settings removed, config disabled; original manifest read unchanged."
+}

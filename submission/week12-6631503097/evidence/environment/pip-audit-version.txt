@@ -1,0 +1,9 @@
+$ docker run --rm python:3.9-slim sh -c 'python --version; pip install --quiet pip-audit && pip-audit --version'
+Python 3.9.25
+pip-audit 2.9.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip is available: 23.0.1 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+
+exit_status=0

@@ -1,0 +1,40 @@
+[
+  {
+    "bom-ref": "pkg:pypi/flask@1.1.4",
+    "type": "library",
+    "name": "Flask",
+    "version": "1.1.4",
+    "hashes": [
+      {
+        "alg": "SHA-1",
+        "content": "caefbe085934d955994ee9bc9d8e4e86cb79c081"
+      }
+    ],
+    "licenses": [
+      {
+        "license": {
+          "id": "BSD-3-Clause"
+        }
+      }
+    ],
+    "purl": "pkg:pypi/flask@1.1.4",
+    "properties": [
+      {
+        "name": "aquasecurity:trivy:FilePath",
+        "value": "usr/local/lib/python3.9/site-packages/Flask-1.1.4.dist-info/METADATA"
+      },
+      {
+        "name": "aquasecurity:trivy:LayerDiffID",
+        "value": "sha256:7fea9f1730c32a1c23ed5e96237c85d7e00d0520eafba76407deb7d1633ac461"
+      },
+      {
+        "name": "aquasecurity:trivy:LayerDigest",
+        "value": "sha256:8c8e576cc9079225b778673cb43c1d96d5d21b3e57ed107a55d4265bc07d4a31"
+      },
+      {
+        "name": "aquasecurity:trivy:PkgType",
+        "value": "python-pkg"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+$ git rev-parse HEAD; git branch --show-current; git remote -v
+eff680baf8d5f85e6cd736da776fb9d40e61c043
+wk12
+origin	git@github-6631503097:6631503097/software-security.git (fetch)
+origin	git@github-6631503097:6631503097/software-security.git (push)
+upstream	https://github.com/nutthakorn7/software-security.git (fetch)
+upstream	https://github.com/nutthakorn7/software-security.git (push)
+
+exit_status=0

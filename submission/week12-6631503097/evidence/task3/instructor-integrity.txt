@@ -1,0 +1,1 @@
+PASS: every recorded instructor Week 12 file SHA-256 is unchanged. Original wk06 working tree was not written to.

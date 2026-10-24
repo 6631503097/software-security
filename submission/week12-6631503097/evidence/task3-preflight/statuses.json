@@ -1,0 +1,45 @@
+{
+  "docker-version": {
+    "command": [
+      "docker",
+      "version"
+    ],
+    "exit_status": 0
+  },
+  "builder": {
+    "command": [
+      "docker",
+      "buildx",
+      "ls"
+    ],
+    "exit_status": 0
+  },
+  "disk": {
+    "command": [
+      "docker",
+      "system",
+      "df"
+    ],
+    "exit_status": 0
+  },
+  "images": {
+    "command": [
+      "docker",
+      "image",
+      "ls",
+      "--digests"
+    ],
+    "exit_status": 0
+  },
+  "trivy-sbom-options": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "aquasec/trivy:latest",
+      "image",
+      "--help"
+    ],
+    "exit_status": 0
+  }
+}

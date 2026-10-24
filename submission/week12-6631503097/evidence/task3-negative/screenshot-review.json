@@ -1,0 +1,6 @@
+{
+  "path": "/private/tmp/software-security-wk12/submission/week12-6631503097/evidence/screenshots/task3-unsigned-negative.png",
+  "visual_review": "PASS: original full-display macOS PNG; exact worksheet identity command/output visible with genuine discovery and both Cosign rejection results",
+  "capture_finished_bangkok": "2026-10-24T16:34:56.182638+07:00",
+  "sha256": "ab286a8e0d7d84872f291f1e4a9902a618d9e63bb582e19e0285bb027b671d53"
+}

@@ -1,0 +1,3 @@
+GET http://127.0.0.1:8765/sim/resolver-confusion
+HTTP 200
+1948 bytes; provided template served with title/cache placeholders resolved. This is not browser execution.

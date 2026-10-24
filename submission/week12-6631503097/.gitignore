@@ -1,0 +1,18 @@
+# Wanna San / 6631503097 - preserved originals excluded from submission commits
+# Rejected captures remain on disk, are indexed in reviewer records, and are not submitted.
+evidence/screenshots/task2-attack-merged.png
+evidence/screenshots/task2-attack-merged-attempt2.png
+evidence/screenshots/task2-rejected-no-terminal.png
+evidence/screenshots/task2-single-index.png
+evidence/screenshots/task2-single-index-attempt2.png
+evidence/screenshots/task2-single-index-manual.png
+evidence/screenshots/task2-keyboard-check.png
+evidence/screenshots/task4-signature-gate.png
+# Unrelated-worktree filenames and exploratory local state are not submission evidence.
+evidence/environment/original-workspace-final-status.txt
+evidence/task3-preflight/images.stdout.txt
+# Local caches/temporary outputs must never enter submission commits.
+__pycache__/
+*.pyc
+.DS_Store
+.build/

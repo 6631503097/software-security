@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/private/tmp/week12-tools/cosign/v3.1.4/cosign",
+    "verify",
+    "--certificate-identity-regexp",
+    ".*",
+    "--certificate-oidc-issuer-regexp",
+    ".*",
+    "python:3.9-slim"
+  ],
+  "exit_status": 10,
+  "started_utc": "2026-10-24T09:34:21.185013+00:00",
+  "finished_utc": "2026-10-24T09:34:24.815909+00:00"
+}

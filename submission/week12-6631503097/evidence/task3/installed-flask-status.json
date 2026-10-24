@@ -1,0 +1,15 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--entrypoint",
+    "python",
+    "sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+    "-c",
+    "import importlib.metadata as m,json,pathlib;d=m.distribution('Flask');print(json.dumps({'name':d.metadata['Name'],'version':d.version,'metadata_path':str(d._path/'METADATA'),'os_release':pathlib.Path('/etc/os-release').read_text()},indent=2))"
+  ],
+  "exit_status": 0
+}

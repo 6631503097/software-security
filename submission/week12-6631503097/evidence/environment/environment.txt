@@ -1,0 +1,40 @@
+$ sw_vers; uname -m; git --version; bash --version; python3 --version; node --version; docker version; docker context show
+ProductName:		macOS
+ProductVersion:		27.0.1
+BuildVersion:		26A434
+arm64
+git version 2.54.0 (Apple Git-157)
+GNU bash, version 3.2.57(1)-release (arm64-apple-darwin26)
+Copyright (C) 2007 Free Software Foundation, Inc.
+Python 3.13.2
+v22.19.0
+Client:
+ Version:           29.4.3
+ API version:       1.54
+ Go version:        go1.26.2
+ Git commit:        055a478
+ Built:             Wed May  6 17:06:34 2026
+ OS/Arch:           darwin/arm64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.73.0 (226246)
+ Engine:
+  Version:          29.4.3
+  API version:      1.54 (minimum version 1.40)
+  Go version:       go1.26.2
+  Git commit:       56be731
+  Built:            Wed May  6 17:09:05 2026
+  OS/Arch:          linux/arm64
+  Experimental:     false
+ containerd:
+  Version:          v2.2.3
+  GitCommit:        77c84241c7cbdd9b4eca2591793e3d4f4317c590
+ runc:
+  Version:          1.3.5
+  GitCommit:        v1.3.5-0-g488fc13e
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+desktop-linux
+
+exit_status=0

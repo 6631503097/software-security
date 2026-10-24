@@ -1,0 +1,43 @@
+{
+  "exit_status": 0,
+  "pin_count": 9,
+  "pins": [
+    [
+      "Flask",
+      "1.1.4"
+    ],
+    [
+      "Werkzeug",
+      "1.0.1"
+    ],
+    [
+      "Jinja2",
+      "2.11.3"
+    ],
+    [
+      "MarkupSafe",
+      "2.0.1"
+    ],
+    [
+      "itsdangerous",
+      "1.1.0"
+    ],
+    [
+      "click",
+      "7.1.2"
+    ],
+    [
+      "requests",
+      "2.25.1"
+    ],
+    [
+      "urllib3",
+      "1.26.4"
+    ],
+    [
+      "PyYAML",
+      "5.4.1"
+    ]
+  ],
+  "instructor_sha256_unchanged": true
+}

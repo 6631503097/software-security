@@ -1,0 +1,23 @@
+Unable to find image 'python:3.9-slim' locally
+3.9-slim: Pulling from library/python
+c23f4b503473: Pulling fs layer
+a16e55119267: Pulling fs layer
+479b8ad8bcc3: Pulling fs layer
+ebfe7d4fa0c5: Pulling fs layer
+c23f4b503473: Download complete
+479b8ad8bcc3: Download complete
+2c924589a7b3: Download complete
+94fc6135d9ca: Download complete
+ebfe7d4fa0c5: Download complete
+a16e55119267: Download complete
+479b8ad8bcc3: Pull complete
+a16e55119267: Pull complete
+c23f4b503473: Pull complete
+ebfe7d4fa0c5: Pull complete
+Digest: sha256:2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b
+Status: Downloaded newer image for python:3.9-slim
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip is available: 23.0.1 -> 26.0.1
+[notice] To update, run: pip install --upgrade pip
+Found 33 known vulnerabilities in 6 packages

@@ -1,0 +1,4 @@
+$ printf '%s | %s | ' "$(whoami)" '6631503097'; date '+%F %T %Z' 
+wannasan | 6631503097 | 2026-10-24 13:58:23 +07
+
+exit_status=0

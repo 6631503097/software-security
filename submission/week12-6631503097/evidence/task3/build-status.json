@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "build",
+    "--progress=plain",
+    "-t",
+    "week12-supplychain",
+    "-t",
+    "week12-supplychain:lab",
+    "."
+  ],
+  "cwd": "/private/tmp/software-security-wk12/labs/week12-supply-chain",
+  "exit_status": 0,
+  "started_utc": "2026-10-24T08:01:37.673907+00:00",
+  "finished_utc": "2026-10-24T08:01:44.213402+00:00",
+  "note": "Unqualified requested name tags latest; additional lab tag matches worksheet. No push."
+}

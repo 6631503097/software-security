@@ -1,0 +1,1 @@
+pip 25.0 from /private/tmp/week12-task4-hash-20261024/lib/python3.13/site-packages/pip (python 3.13)

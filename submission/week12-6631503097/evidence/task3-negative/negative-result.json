@@ -1,0 +1,23 @@
+{
+  "result": "PASS: expected unsigned-image rejection",
+  "unsigned_image": "index.docker.io/library/python@sha256:2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b",
+  "manifest_access_http": 200,
+  "oci_referrers_http": 200,
+  "oci_referrer_count": 0,
+  "legacy_cosign_signature_http": 404,
+  "cosign_tree_exit": 0,
+  "verification_results": {
+    "verify-pinned": {
+      "exit_status": 10,
+      "reason": "no signatures found",
+      "failure_is_missing_signature": true
+    },
+    "verify-worksheet": {
+      "exit_status": 10,
+      "reason": "no signatures found",
+      "failure_is_missing_signature": true
+    }
+  },
+  "scope": "No discoverable registry Cosign signatures at this exact image-index digest at the recorded check time; not a claim about all signing systems or every child platform image.",
+  "ghcr_visibility": "private"
+}

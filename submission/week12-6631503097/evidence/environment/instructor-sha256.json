@@ -1,0 +1,16 @@
+{
+  "labs/week12-supply-chain/requirements.txt": "2d684ff3e80a596bae484e755eccc50090da803d6852a5d0d6001dfc4f847d18",
+  "labs/week12-supply-chain/worksheet.md": "a82778ad8cc91e60ca657f4f356e15f021ccd2415ef05f5a8c8a9b217466b604",
+  "labs/week12-supply-chain/Dockerfile": "d0ef913a8fae281cbee631144839a398b15ee660f299b95f282719587ba9e815",
+  "labs/week12-supply-chain/sign.sh": "010d876aa03ea40d25dfa2e4a033c09929d017302992e9975cce5acd73696500",
+  "labs/week12-supply-chain/README.md": "2274676b6f187df524ff8afedaa67fcedeea6a7ebc74ef148dae6c3e39392861",
+  "labs/week12-supply-chain/dependency-confusion.md": "d347ea92e14e0e16507301de82ab8b1724e46fb429b695996625188537cb88b2",
+  "labs/week12-supply-chain/sca_scan.sh": "9b9bbffd31ae5ef96670dfbd0c3bf4598c8a01cc417a10e7de752a809449c109",
+  "labs/week12-supply-chain/app.py": "99636c9c7d63a4b49e339dee5fb6574e5f588713281b635b36bcd931a2219360",
+  "labs/week12-supply-chain/img/sigstore-keyless.svg": "0a4bc58d74c88de107d83a21b9b6c3004b154ef5250377bd46edc551548adb25",
+  "labs/week12-supply-chain/img/sca-worklist.svg": "eb774d8e795fcc8ac64dcab84f19432912b6d2d0c71f4776b854ab9765ef96fa",
+  "labs/week12-supply-chain/img/supply-chain-attack-vectors.svg": "466f7fcbf5f6d1190c9e3ad3580415bd754fb3c2862f9eb2822c9d0ef47c7ade",
+  "labs/week12-supply-chain/img/sbom-slsa-integrity.svg": "d424872051d06f4c3abf7ff483d7d8a828ac482985f65112ff9ff00845dd2854",
+  "labs/week12-supply-chain/img/supply-chain-design-risk.svg": "25f8c6789b724b6e99410969d8a2ef9b844e1a3bcd8fb4794a2c876071722a38",
+  "labs/week12-supply-chain/img/supply-chain.svg": "15aa85349be42a1f5b00146a2c0facd5ef3a4f520d3ddad84c82e99c5c4bc7c4"
+}

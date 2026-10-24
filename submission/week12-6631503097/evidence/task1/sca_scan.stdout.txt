@@ -1,0 +1,107 @@
+==> [1/3] trivy fs — scanning requirements.txt for vulnerable versions
+
+Report Summary
+
+┌──────────────────┬──────┬─────────────────┐
+│      Target      │ Type │ Vulnerabilities │
+├──────────────────┼──────┼─────────────────┤
+│ requirements.txt │ pip  │       11        │
+└──────────────────┴──────┴─────────────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
+
+requirements.txt (pip)
+======================
+Total: 11 (HIGH: 11, CRITICAL: 0)
+
+┌──────────┬────────────────┬──────────┬────────┬───────────────────┬────────────────┬─────────────────────────────────────────────────────────────┐
+│ Library  │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version  │                            Title                            │
+├──────────┼────────────────┼──────────┼────────┼───────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
+│ Flask    │ CVE-2023-30861 │ HIGH     │ fixed  │ 1.1.4             │ 2.3.2, 2.2.5   │ flask: Possible disclosure of permanent session cookie due  │
+│          │                │          │        │                   │                │ to missing Vary: Cookie...                                  │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2023-30861                  │
+├──────────┼────────────────┤          │        ├───────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
+│ Werkzeug │ CVE-2023-25577 │          │        │ 1.0.1             │ 2.2.3          │ python-werkzeug: high resource usage when parsing multipart │
+│          │                │          │        │                   │                │ form data with many fields...                               │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2023-25577                  │
+│          ├────────────────┤          │        │                   ├────────────────┼─────────────────────────────────────────────────────────────┤
+│          │ CVE-2024-34069 │          │        │                   │ 3.0.3          │ python-werkzeug: user may execute code on a developer's     │
+│          │                │          │        │                   │                │ machine                                                     │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2024-34069                  │
+├──────────┼────────────────┤          │        ├───────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
+│ urllib3  │ CVE-2021-33503 │          │        │ 1.26.4            │ 1.26.5         │ python-urllib3: ReDoS in the parsing of authority part of   │
+│          │                │          │        │                   │                │ URL                                                         │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2021-33503                  │
+│          ├────────────────┤          │        │                   ├────────────────┼─────────────────────────────────────────────────────────────┤
+│          │ CVE-2023-43804 │          │        │                   │ 2.0.6, 1.26.17 │ python-urllib3: Cookie request header isn't stripped during │
+│          │                │          │        │                   │                │ cross-origin redirects                                      │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2023-43804                  │
+│          ├────────────────┤          │        │                   ├────────────────┼─────────────────────────────────────────────────────────────┤
+│          │ CVE-2025-66418 │          │        │                   │ 2.6.0          │ urllib3: urllib3: Unbounded decompression chain leads to    │
+│          │                │          │        │                   │                │ resource exhaustion                                         │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2025-66418                  │
+│          ├────────────────┤          │        │                   │                ├─────────────────────────────────────────────────────────────┤
+│          │ CVE-2025-66471 │          │        │                   │                │ urllib3: urllib3 Streaming API improperly handles highly    │
+│          │                │          │        │                   │                │ compressed data                                             │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2025-66471                  │
+│          ├────────────────┤          │        │                   ├────────────────┼─────────────────────────────────────────────────────────────┤
+│          │ CVE-2026-21441 │          │        │                   │ 2.6.3          │ urllib3: urllib3 vulnerable to decompression-bomb safeguard │
+│          │                │          │        │                   │                │ bypass when following HTTP redirects (streaming...          │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2026-21441                  │
+│          ├────────────────┤          │        │                   ├────────────────┼─────────────────────────────────────────────────────────────┤
+│          │ CVE-2026-44431 │          │        │                   │ 2.7.0          │ urllib3: urllib3: Information disclosure via cross-origin   │
+│          │                │          │        │                   │                │ redirects forwarding sensitive headers                      │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2026-44431                  │
+│          ├────────────────┤          │        │                   ├────────────────┼─────────────────────────────────────────────────────────────┤
+│          │ CVE-2026-97687 │          │        │                   │ 2.8.0          │ urllib3: urllib3: Traffic interception via HTTPS proxy TLS  │
+│          │                │          │        │                   │                │ configuration override                                      │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2026-97687                  │
+│          ├────────────────┤          │        │                   │                ├─────────────────────────────────────────────────────────────┤
+│          │ CVE-2026-97689 │          │        │                   │                │ urllib3: urllib3: Denial of Service via unbounded memory    │
+│          │                │          │        │                   │                │ allocation in chunk parser...                               │
+│          │                │          │        │                   │                │ https://avd.aquasec.com/nvd/cve-2026-97689                  │
+└──────────┴────────────────┴──────────┴────────┴───────────────────┴────────────────┴─────────────────────────────────────────────────────────────┘
+
+==> [2/3] pip-audit — Python advisory database check
+Name     Version ID              Fix Versions
+-------- ------- --------------- -------------
+flask    1.1.4   PYSEC-2023-62   2.2.5,2.3.2
+flask    1.1.4   PYSEC-2026-2151 3.1.3
+werkzeug 1.0.1   PYSEC-2022-203  2.1.1
+werkzeug 1.0.1   PYSEC-2023-58   2.2.3
+werkzeug 1.0.1   PYSEC-2023-57   2.2.3
+werkzeug 1.0.1   PYSEC-2023-221  2.3.8,3.0.1
+werkzeug 1.0.1   PYSEC-2026-2046 3.1.4
+werkzeug 1.0.1   PYSEC-2026-2045 3.0.6
+werkzeug 1.0.1   PYSEC-2026-2044 3.1.5
+werkzeug 1.0.1   PYSEC-2026-2043 3.0.3
+werkzeug 1.0.1   PYSEC-2026-2320 3.1.6
+werkzeug 1.0.1   PYSEC-2026-4312 3.1.9
+jinja2   2.11.3  PYSEC-2026-1473 3.1.3
+jinja2   2.11.3  PYSEC-2026-1471 3.1.6
+jinja2   2.11.3  PYSEC-2026-1474 3.1.4
+jinja2   2.11.3  PYSEC-2026-1475 3.1.5
+requests 2.25.1  PYSEC-2023-74   2.31.0
+requests 2.25.1  PYSEC-2026-1873 2.32.0
+requests 2.25.1  PYSEC-2026-1872 2.32.4
+requests 2.25.1  PYSEC-2026-2275 2.33.0
+urllib3  1.26.4  PYSEC-2021-108  1.26.5
+urllib3  1.26.4  PYSEC-2023-192  1.26.17,2.0.6
+urllib3  1.26.4  PYSEC-2023-212  1.26.18,2.0.7
+urllib3  1.26.4  PYSEC-2026-141  2.7.0
+urllib3  1.26.4  PYSEC-2026-1999 2.5.0
+urllib3  1.26.4  PYSEC-2026-1998 2.6.0
+urllib3  1.26.4  PYSEC-2026-1995 1.26.19,2.2.2
+urllib3  1.26.4  PYSEC-2026-1994 2.6.0
+urllib3  1.26.4  PYSEC-2026-1996 2.6.3
+urllib3  1.26.4  PYSEC-2026-4177 2.8.0
+urllib3  1.26.4  PYSEC-2026-4175 2.8.0
+idna     2.10    PYSEC-2024-60   3.7
+idna     2.10    PYSEC-2026-215  3.15
+
+==> [3/3] trivy image (optional) — scans the built image's OS + libs
+    (image 'week12-supplychain:lab' not built yet — run: docker build -t week12-supplychain:lab . )
+
+==> Done. Remediation = bump each flagged package to its fixed version.

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/private/tmp/software-security-wk12/sub127.0.0.1 - - [24/Oct/2026 14:05:36] "GET /sim/resolver-confusion HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2026 14:05:38] "GET /static/sim/sim.css HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2026 14:05:38] "GET /static/sim/resolver-confusion.js?v=local HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2026 14:05:38] code 404, message Not Found
+127.0.0.1 - - [24/Oct/2026 14:05:38] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [24/Oct/2026 14:05:47] "GET /sim/resolver-confusion HTTP/1.1" 200 -
+p/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 48] Address already in use

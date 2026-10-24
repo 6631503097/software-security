@@ -1,0 +1,16 @@
+{
+  "captures.jsonl": "1a0ae69f016623195b854752be039c0e581b6dee0e0aaa570db31dc26a87a354",
+  "certificate-public.txt": "3bf345143b363cf7a706e792481bc6a159df5adbce8df7e2a3b517c44c7ad64d",
+  "image.sigstore.json": "a1f2d3b2795eca6f7b549e2e7602979d5196697928369e1a6ea7400014044986",
+  "instructor-integrity.txt": "75f6ad923b231b72aafaf4a7918b5d40a41715a872a7a0c22495216ea52635fb",
+  "post-sign-visibility.json": "dab5f810d9a2ea62a315def4d27b80e24dfc97d747358828dff72a2475a832bd",
+  "pre-sign-visibility.json": "41ba5102b97c308877e2b608e6fd62f3f28352752df4986add7f5b505a9307ec",
+  "screenshot-review.json": "9638570df98c3ac89143e7bb560c204cd21ce421ea95587faea3bfcf97e37db8",
+  "sign-command.json": "08f866b8f8d689e1f3aa9c8ae979cddf2b2c7677dd930241c8989877f8992ddc",
+  "sign-status.json": "9a8a2f0d8a2c6650b1f41a2c1e2655bf428340be9fbc636bd698e08cf53ceea1",
+  "sign.sanitized-output.txt": "4a4573d642cc562e3a3c4b0bdf311aa33c260e0d131a6cbbe8f89876926ee5a8",
+  "verified-result.json": "a64321cf127e456f2c3312a8acc4b422503a8296285629b26eb98717a14f70a7",
+  "verify-status.json": "1753d03eaa62deb1540a0ef07489c087d3bd650dee3f39d9424be5c6a24d01ff",
+  "verify.stderr.txt": "8322924b000e295ce7294bfef6793c307e7ab49337339fd6ab5e99ff6316dfd2",
+  "verify.stdout.json": "ccc33ad32c919597992d4a8b421721011f2bec4fa95deb425c4376c6e03455af"
+}

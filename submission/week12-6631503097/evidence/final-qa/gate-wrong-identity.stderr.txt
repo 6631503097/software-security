@@ -1,0 +1,4 @@
+Error: no matching attestations: failed to verify certificate identity: no matching CertificateIdentity found, last error: expected SAN value "unauthorized-signer@example.invalid", got "6631503097@lamduan.mfu.ac.th"
+error during command execution: no matching attestations: failed to verify certificate identity: no matching CertificateIdentity found, last error: expected SAN value "unauthorized-signer@example.invalid", got "6631503097@lamduan.mfu.ac.th"
+
+DENY: signature verification failed (exit 1); no simulated deploy allowed.

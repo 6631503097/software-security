@@ -1,0 +1,3 @@
+📦 Supply Chain Security Related artifacts for an image: index.docker.io/library/python@sha256:2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b
+No Supply Chain Security Related Artifacts found for image index.docker.io/library/python@sha256:2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b,
+ start creating one with simply running$ cosign sign <img>

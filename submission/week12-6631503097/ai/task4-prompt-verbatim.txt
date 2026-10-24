@@ -1,0 +1,24 @@
+Continue Week 12 Task 4 in the isolated worktree:
+
+/private/tmp/software-security-wk12
+
+Tasks 0–3 are complete, with verified evidence.
+
+Please complete the technical defense exercises for Task 4 using the instructor's Week 12 worksheet and existing project files.
+
+1. Inspect the exact Task 4 requirements before running commands.
+2. Demonstrate pip hash enforcement using `pip install --require-hashes -r requirements.txt` in an isolated, disposable environment. Capture the genuine refusal caused by missing hashes.
+3. Demonstrate the safer single-trusted-index configuration using `--index-url`, and explain why combining private and public indexes with `--extra-index-url` can create dependency-confusion risks.
+4. Document a practical provenance verification gate using our signed, digest-pinned GHCR image and the exact Cosign certificate identity and issuer.
+5. Distinguish signature verification from full SLSA provenance attestation. Do not claim a SLSA level without supporting evidence.
+6. Capture exact commands, outputs, exit codes, and genuine full-screen screenshots showing the required student identity command.
+7. Save evidence under the existing Week 12 submission directory.
+8. Update the report with concise explanations and OWASP/CWE mappings.
+9. Identify any remaining Task 4 requirements that need written analysis rather than command execution.
+
+Do not change instructor files or the original wk06 worktree.
+Do not install vulnerable dependencies into my main environment.
+Do not publish, sign, or push any additional artifacts.
+Do not commit, push Git code, create a PR, or generate the final PDF yet.
+
+Stop after the technical exercises and report the results and remaining written requirements.

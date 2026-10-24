@@ -1,0 +1,22 @@
+# Sandbox/teaching only; for authorized lab use.
+#
+# Week 12 — Supply-Chain / SCA practice.
+# These versions are OUTDATED on purpose so that SCA tools (trivy fs / image,
+# pip-audit) flag known vulnerabilities — yet they still resolve and install
+# together (a real project must build before you can scan its image).
+# CWE-1104 (unmaintained 3rd-party component),
+# CWE-1395 (dependency on vulnerable 3rd-party component),
+# OWASP 2025 A03 Software Supply Chain Failures.
+#
+# DO NOT use these pins in real projects. Treat the SCA output as a
+# remediation worklist: bump each to a current, patched release.
+
+Flask==1.1.4           # old Flask 1.x line
+Werkzeug==1.0.1        # old; pre-2.x security hardening
+Jinja2==2.11.3         # CVE-2020-28493 (ReDoS in the urlize filter)
+MarkupSafe==2.0.1      # pinned for Jinja2 2.11 compatibility
+itsdangerous==1.1.0    # old; pinned for Flask 1.1.x
+click==7.1.2           # old; pinned for Flask 1.1.x
+requests==2.25.1       # old HTTP client
+urllib3==1.26.4        # CVE-2021-33503 (ReDoS); CRLF/cert-era issues
+PyYAML==5.4.1          # old release

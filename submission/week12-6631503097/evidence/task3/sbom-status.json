@@ -1,0 +1,24 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "-v",
+    "/var/run/docker.sock:/var/run/docker.sock",
+    "-v",
+    "/private/tmp/software-security-wk12/submission/week12-6631503097/evidence/task3:/evidence",
+    "aquasec/trivy:latest",
+    "image",
+    "--image-src",
+    "docker",
+    "--format",
+    "cyclonedx",
+    "--output",
+    "/evidence/sbom.cdx.json",
+    "sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6"
+  ],
+  "exit_status": 0,
+  "source_image_id": "sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "started_utc": "2026-10-24T08:01:56.890408+00:00",
+  "finished_utc": "2026-10-24T08:01:58.562984+00:00"
+}

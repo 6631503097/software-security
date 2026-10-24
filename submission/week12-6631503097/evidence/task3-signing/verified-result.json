@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "actual_certificate_email": "6631503097@lamduan.mfu.ac.th",
+  "actual_certificate_oidc_issuer": "https://github.com/login/oauth",
+  "expected_identity_matches": true,
+  "expected_issuer_matches": true,
+  "verified_digest": "sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6",
+  "transparency_entry_count": 1,
+  "transparency_entries": [
+    {
+      "log_index": "3438951395",
+      "integrated_time": "1792833901",
+      "has_inclusion_proof": true
+    }
+  ],
+  "visibility": "private",
+  "policy_weakened": false,
+  "raw_authentication_secrets_saved": false
+}

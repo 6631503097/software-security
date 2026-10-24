@@ -1,0 +1,20 @@
+{
+  "captures.jsonl": "e61ef9fd8735355ff5fdd83a72dff20d6dc7c13e1b6486a6fbc02bb6d754e2ad",
+  "instructor-integrity.txt": "65c6f0abd0ad07e3ecf081b5f71b131fa90745e941b99b48295500d88314c141",
+  "legacy-signature.response.json": "909e839faeadf1a6615205cd8169c6bf827d82d03fca19105931d275196a451e",
+  "negative-result.json": "f5e6c375f14d738c76238ae384f931b288a4ce0f85c10f7232724a197118dcb6",
+  "oci-referrers.response.json": "3d60eec733f106e03a571223c6adb85a3dabd53590ae0d8339e8ea2de2d32c56",
+  "private-package-check.json": "990c8c2f8f8a5df0d35c1a1416b6f6055b2a285b7e973f7dbba8573bac991e71",
+  "python-index-manifest.json": "2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b",
+  "screenshot-review.json": "a37e9a7bd7ffb603710f8fe05bceb51330db1d901e25bdd88865eee0e7f9ce7d",
+  "signature-discovery.json": "f3ae051f5a71ce73fb172ebe3210c6fd32e4c7d1c0dc5160cfd4183f9d9ad30e",
+  "tree-status.json": "d8b41185db896d32821521bc0db83f8a281c853b1e0450e0dbfdb446a6d85157",
+  "tree.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tree.stdout.txt": "26b46dc5f0b332c946f1a55bcd426e323faa3a7173d50743b57fdc7a8539af17",
+  "verify-pinned-status.json": "d79f4fc035e9df0f9334e1cf2eb25413ef285d38a1bae747c3c4aaea3ccaa503",
+  "verify-pinned.stderr.txt": "23118dcf927f3b7d461c275fa235d4e5a27567192d2839599d5a30a62b910c7a",
+  "verify-pinned.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "verify-worksheet-status.json": "32cf90c77278fba287a58e4fc1e638605ed79c95fee8b4f2676bbd16577315be",
+  "verify-worksheet.stderr.txt": "23118dcf927f3b7d461c275fa235d4e5a27567192d2839599d5a30a62b910c7a",
+  "verify-worksheet.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

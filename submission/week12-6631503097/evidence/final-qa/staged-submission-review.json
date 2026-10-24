@@ -1,0 +1,8 @@
+{
+  "staged_file_count_before_this_record": 220,
+  "accepted_screenshot_count": 15,
+  "only_week12_paths": true,
+  "secret_pattern_findings_paths_only": [],
+  "no_file_over_github_100_MiB": true,
+  "only_local_commit_authorized": true
+}

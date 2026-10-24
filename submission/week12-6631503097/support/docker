@@ -1,0 +1,14 @@
+#!/opt/homebrew/bin/python3
+import subprocess,sys,pathlib,json,time,os
+root=pathlib.Path(__file__).resolve().parents[1]/'evidence/task1'
+n=str(time.time_ns()); base=root/n
+args=['/usr/local/bin/docker',*sys.argv[1:]]
+start=time.time()
+with open(str(base)+'.stdout.txt','wb') as out,open(str(base)+'.stderr.txt','wb') as err:
+ try: rc=subprocess.run(args,stdout=out,stderr=err,timeout=600).returncode
+ except subprocess.TimeoutExpired: rc=124
+record={'command':args,'exit_status':rc,'started_epoch':start,'duration_seconds':time.time()-start,'stdout':base.name+'.stdout.txt','stderr':base.name+'.stderr.txt'}
+with (root/'process-status.jsonl').open('a') as f:f.write(json.dumps(record)+'\n')
+sys.stdout.buffer.write(pathlib.Path(str(base)+'.stdout.txt').read_bytes());sys.stdout.buffer.flush()
+sys.stderr.buffer.write(pathlib.Path(str(base)+'.stderr.txt').read_bytes());sys.stderr.buffer.flush()
+sys.exit(rc if rc>=0 else 128-rc)

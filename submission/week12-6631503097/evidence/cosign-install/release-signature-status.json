@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/private/tmp/week12-tools/cosign/v3.1.4/cosign",
+    "verify-blob",
+    "/private/tmp/week12-tools/cosign/v3.1.4/cosign",
+    "--bundle",
+    "/private/tmp/week12-tools/cosign/v3.1.4/cosign-darwin-arm64.sigstore.json",
+    "--certificate-identity",
+    "keyless@projectsigstore.iam.gserviceaccount.com",
+    "--certificate-oidc-issuer",
+    "https://accounts.google.com"
+  ],
+  "exit_status": 0,
+  "note": "Read-only verification of an already public official release signature. No signing, OIDC login or new log entry. Binary bootstrap trusted via official HTTPS asset and matching published checksums; no independent artifact-key/TUF bootstrap performed."
+}

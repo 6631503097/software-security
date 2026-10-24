@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-10-24T09:33:42.879569+00:00",
+  "suggested_image": "python:3.9-slim",
+  "manifest_resolution_http": 200,
+  "digest": "sha256:2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b",
+  "immutable_reference": "index.docker.io/library/python@sha256:2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b",
+  "checks": [
+    {
+      "check": "oci-referrers",
+      "registry_path": "referrers/sha256:2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b",
+      "http_status": 200,
+      "response_file": "oci-referrers.response.json"
+    },
+    {
+      "check": "legacy-signature",
+      "registry_path": "manifests/sha256-2d97f6910b16bd338d3060f261f53f144965f755599aab1acda1e13cf1731b1b.sig",
+      "http_status": 404,
+      "response_file": "legacy-signature.response.json"
+    }
+  ]
+}

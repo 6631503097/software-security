@@ -1,0 +1,2 @@
+Collecting Flask==1.1.4 (from -r requirements.txt (line 14))
+  Downloading Flask-1.1.4-py2.py3-none-any.whl (94 kB)

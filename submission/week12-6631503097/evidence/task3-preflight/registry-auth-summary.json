@@ -1,0 +1,7 @@
+{
+  "config_exists": true,
+  "auth_registry_names": [],
+  "credential_store": "desktop",
+  "helper_registry_names": [],
+  "note": "No credentials read from helpers; authentication and push access unverified."
+}

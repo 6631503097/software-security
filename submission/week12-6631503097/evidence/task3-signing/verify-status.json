@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/private/tmp/week12-tools/cosign/v3.1.4/cosign",
+    "verify",
+    "--certificate-identity",
+    "6631503097@lamduan.mfu.ac.th",
+    "--certificate-oidc-issuer",
+    "https://github.com/login/oauth",
+    "ghcr.io/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6"
+  ],
+  "exit_status": 0,
+  "started_utc": "2026-10-24T09:25:43.434006+00:00",
+  "finished_utc": "2026-10-24T09:25:50.713668+00:00",
+  "policy_weakened": false
+}
