@@ -7,10 +7,10 @@
 - [x] Five lecture answers; dependency/index explanations; OWASP/CWE mapping; XZ analysis; mitigation and cautious SLSA self-assessment.
 - [x] Actual AI prompt/full response preserved before critique; no invented AI interaction.
 - [x] Necessary wrong-signer gate verification added: exit 1, DENY, no ALLOW/deployment. Earlier positive gate result reused.
-- [x] EiPE, critique, personal explanations and rationale clearly labeled as suggested text for student review.
-- [x] Strongest-defense choice confirmed by student: single curated trusted index. Reason remains a suggested rationale.
+- [x] EiPE, critique, personal explanations and rationale approved by Wanna San on 24 October 2026; AI assistance disclosed.
+- [x] Strongest-defense choice confirmed by student: single curated trusted index. Rationale approved by student.
 - [x] CycloneDX 1.7 SBOM/schema PASS, 119 components, Flask metadata, exact signed image digest and verification policy preserved.
-- [x] PDF Wk12_6631503097.pdf: 34 pages, 17,391,866 bytes (about 16.6 MiB), below the repository portal implementation's 20 MiB limit.
+- [x] PDF Wk12_6631503097.pdf: 34 pages, current byte size and hash recorded in evidence/final-submission-review/pdf-validation.json (about 16.6 MiB), below the repository portal implementation's 20 MiB limit.
 - [x] All 34 final PDF pages rendered and visually checked; independent PDF reader succeeded; no clipping/blank pages/missing images found.
 - [x] 15 accepted original screenshots embedded. PDF image RGB pixels match originals; originals remain unedited. Rejected originals preserved on disk and excluded from submission commits.
 - [x] Secret-pattern scan of text artifacts and extracted PDF text, plus visual review of accepted screenshots: no authentication secrets detected. Public signed certificate/identity intentionally included under prior approval.
@@ -21,7 +21,7 @@
 
 ## Student actions still required
 
-- [ ] Review and rewrite/adopt the suggested EiPE, reflections, personal rationale and AI critique in your own words; be prepared to explain the technical results live.
+- [x] Student approved personal reflection, EiPE, strongest-defense rationale and Audit the AI critique.
 - [ ] Explicitly approve Git branch push and PR creation after review. Add the resulting real PR URL; the present local commit link is not remotely resolvable until push.
 - [ ] Confirm/complete the individual Week 12 quiz at learn.zcr.ai/quiz using the issued one-time code; Codex did not attempt it.
 - [ ] Upload the reviewed PDF to learn.zcr.ai/submit with the issued submission code, before the instructor's deadline. The source rule says before the next class unless told otherwise; no exact class date was assumed.
@@ -29,6 +29,8 @@
 
 ## Readiness and limits
 
-The technical submission package and formatted PDF are prepared, but the assignment is NOT fully ready to claim as submitted or independently student-authored until the personal-review and publication/portal steps above are complete. No SLSA level, production deployment, full hash lockfile or package-upgrade remediation is claimed. Historical partial-status reports and preparation plans are preserved with explicit archival labels.
+The technical submission package and formatted PDF are prepared, but the assignment is NOT fully ready to claim as submitted or independently student-authored until the publication/portal steps above are complete. No SLSA level, production deployment, full hash lockfile or package-upgrade remediation is claimed. Historical partial-status reports and preparation plans are preserved with explicit archival labels.
 
 Final QA records: evidence/final-qa/pdf-structure-check.json, secret-review.json, inventory-final-check.json, final-private-package-check.json and final evidence index.
+
+Final review: PR target confirmed as nutthakorn7/software-security:main from 6631503097:wk12, with no merge. The fork’s main is intentionally unchanged; it is not a clean base for this upstream-baselined branch. Explicit push approval remains pending.

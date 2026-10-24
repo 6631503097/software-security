@@ -1,0 +1,39 @@
+{
+  "student": "Wanna San / 6631503097",
+  "worksheet": "labs/week12-supply-chain/worksheet.md",
+  "rubric": {
+    "lecture_20": "Five sourced answers present",
+    "tasks_1_3_40": "Three genuine SCA findings; all three resolver states; image SBOM Flask entry; exact-policy signature pass; prechecked unsigned-image rejection",
+    "defense_25": "Hash refusal incl actual Flask hash; trusted-index explanation; namespace policy; simulated deployment gate; approved strongest-defense rationale",
+    "reflection_15": "Mapping table, XZ analysis, approved self-assessment; no unsupported SLSA level"
+  },
+  "additional_required": [
+    "Task 0 nine-package table",
+    "AI disclosure",
+    "Full actual AI response and exact quoted critique",
+    "Verified wrong-signer correction",
+    "Approved EiPE",
+    "Actual single final prompt and verified result",
+    "15 original full-screen identity-stamped screenshots",
+    "Defense commit link"
+  ],
+  "pending": [
+    "Explicit approval to push wk12 and create the PR",
+    "Insert actual PR URL and regenerate/validate PDF after PR creation",
+    "Student course-portal upload and quiz status"
+  ],
+  "pr_target": {
+    "base": "nutthakorn7/software-security:main",
+    "head": "6631503097:wk12",
+    "upstream_main_verified": "eff680baf8d5f85e6cd736da776fb9d40e61c043",
+    "existing_pr": false,
+    "merge_authorized": false
+  },
+  "github_login_verified": "6631503097",
+  "fork_public": true,
+  "cli": "Official GitHub CLI v2.103.2 arm64; release SHA-256 checksum matched; existing account authenticated",
+  "preserved_evidence": "No original screenshots, transcripts, command outputs, SBOM or signing evidence changed",
+  "instructor_hashes_checked": 14,
+  "instructor_mismatches": 0,
+  "notes": "Whitespace warnings in original captured tool output are intentionally preserved; no evidence was cleaned or rewritten. A signature gate is accurately distinguished from a full build-provenance policy."
+}

@@ -1,0 +1,335 @@
+{
+  "timestamp": "2026-10-24T15:22:24.303075+00:00",
+  "bytes": 17391312,
+  "sha256": "dcb7b10c35939558f45aff1886ddb68e2ee79e54c30c8d5ed6c74c1d442371a7",
+  "page_count": 34,
+  "readers": [
+    "PyMuPDF",
+    "pypdf strict=True"
+  ],
+  "extracted_text_characters": 48053,
+  "first_middle_last_text": {
+    "1": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 1\nSoftware Security (KOSEN69) | Week 12\nSoftware Supply-Chain Security\nWeek 12 assignment report\nStudent: Wanna San\nStudent ID: 6631503097\nGroup: The Imposters\nDate: 24 October 2026\nPersonal responses approved | GitHub publication pending approval\nTechnical evidence and student-approved personal responses are complete. GitHub publication status is recorded\nin Section 11. Course-portal upload and quiz completion remain student actions.\nEvidence pages retain complete original screenshots. No authentication secrets are included.\n",
+    "18": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 18\n6.3 Approved keyless signing and exact-policy verification\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nOfficial Cosign v3.1.4 exited 0. The student explicitly approved keyless signing and public metadata disclosure, then\npersonally completed GitHub OIDC/2FA. --yes applied that existing consent; normal selected browser\nauthentication and ambient providers were disabled. Only sanitized nonsecret progress was retained: ephemeral\nkeys generated, artifact signed, bundle written, and signature pushed to the private GHCR repository. Raw auth\nURLs, codes and tokens were not stored.\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8\ncd0ed10e2e8a6\nVerification exited 0. The actual certificate SAN email was 6631503097@lamduan.mfu.ac.th and its OIDC issuer\nextension was https://github.com/login/oauth; both matched the exact expected policy. Cosign validated claims,\ntrusted certificate evidence and transparency inclusion. No wildcard policy was substituted. The bundle\nimage.sigstore.json contains one log entry, index 3438951395, with inclusion proof. Public disclosure was\nauthorized even though the registry image remained private. [R9, R10]\nRemediation note (A08/CWE-829): require the authorized signer and immutable digest before a deployment\ndecision; reject unknown identity, missing signatures and verification errors. A trusted signature identifies approval\nof those bytes, not absence of vulnerable or malicious dependencies.\n",
+    "34": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 34\nevidence/task3-publication/push-status.json\ndocker push ghcr.io/6631503097/week12-supplychain:lab\nActual exit: 0\nevidence/task3-signing/sign-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nActual exit: 0\nevidence/task3-signing/verify-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8\ncd0ed10e2e8a6\nActual exit: 0\nevidence/task3-negative/verify-worksheet-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity-regexp '.*' \n--certificate-oidc-issuer-regexp '.*' python:3.9-slim\nActual exit: 10\nevidence/task3-negative/verify-pinned-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity-regexp '.*' \n--certificate-oidc-issuer-regexp '.*' index.docker.io/library/python@sha256:2d97f6910b16bd3\n38d3060f261f53f144965f755599aab1acda1e13cf1731b1b\nActual exit: 10\nevidence/task4/hash-refusal-status.json\n/private/tmp/week12-task4-hash-20261024/bin/pip install --require-hashes -r \nrequirements.txt\nActual exit: 1\nevidence/task4/single-index-refusal-status.json\n/private/tmp/week12-task4-hash-20261024/bin/pip install --require-hashes --index-url \nhttps://pypi.org/simple -r requirements.txt\nActual exit: 1\nevidence/task4/gate-status.json\nbash submission/week12-6631503097/support/task4-verification-gate.sh\nActual exit: 0\nevidence/final-qa/gate-wrong-identity-status.json\nbash tmp/week12-final-qa/gate-wrong-identity.sh\nActual exit: 1\nArtifact paths and hashes are indexed in evidence/final-qa/. The production gate is unchanged.\n"
+  },
+  "required_sections": {
+    "lecture answers": true,
+    "Task 0": true,
+    "Task 1": true,
+    "Task 2": true,
+    "Task 3": true,
+    "Task 4": true,
+    "Audit the AI": true,
+    "Explain in Plain English": true,
+    "Prompt Problem": true,
+    "XZ": true,
+    "References": true,
+    "reflection": true,
+    "No SLSA level": true
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text_characters": 608,
+      "render_variance": 2046.089326676897,
+      "images": 0
+    },
+    {
+      "page": 2,
+      "text_characters": 3047,
+      "render_variance": 9265.515160444676,
+      "images": 0
+    },
+    {
+      "page": 3,
+      "text_characters": 2460,
+      "render_variance": 3516.7952369196205,
+      "images": 0
+    },
+    {
+      "page": 4,
+      "text_characters": 1724,
+      "render_variance": 5280.177547015799,
+      "images": 0
+    },
+    {
+      "page": 5,
+      "text_characters": 289,
+      "render_variance": 27709.394344905733,
+      "images": 1
+    },
+    {
+      "page": 6,
+      "text_characters": 1876,
+      "render_variance": 9204.549926638665,
+      "images": 0
+    },
+    {
+      "page": 7,
+      "text_characters": 315,
+      "render_variance": 27954.56214192415,
+      "images": 1
+    },
+    {
+      "page": 8,
+      "text_characters": 302,
+      "render_variance": 28004.14296693461,
+      "images": 1
+    },
+    {
+      "page": 9,
+      "text_characters": 1521,
+      "render_variance": 5122.863214903281,
+      "images": 0
+    },
+    {
+      "page": 10,
+      "text_characters": 316,
+      "render_variance": 28087.237696086097,
+      "images": 1
+    },
+    {
+      "page": 11,
+      "text_characters": 329,
+      "render_variance": 28315.696008133717,
+      "images": 1
+    },
+    {
+      "page": 12,
+      "text_characters": 317,
+      "render_variance": 28308.38188670665,
+      "images": 1
+    },
+    {
+      "page": 13,
+      "text_characters": 2785,
+      "render_variance": 6488.287703049676,
+      "images": 0
+    },
+    {
+      "page": 14,
+      "text_characters": 320,
+      "render_variance": 28059.639217042633,
+      "images": 1
+    },
+    {
+      "page": 15,
+      "text_characters": 318,
+      "render_variance": 28014.269925342072,
+      "images": 1
+    },
+    {
+      "page": 16,
+      "text_characters": 1150,
+      "render_variance": 1499.2287269055782,
+      "images": 0
+    },
+    {
+      "page": 17,
+      "text_characters": 313,
+      "render_variance": 28066.884801526714,
+      "images": 1
+    },
+    {
+      "page": 18,
+      "text_characters": 2030,
+      "render_variance": 2486.338110707526,
+      "images": 0
+    },
+    {
+      "page": 19,
+      "text_characters": 330,
+      "render_variance": 27993.643349779188,
+      "images": 1
+    },
+    {
+      "page": 20,
+      "text_characters": 335,
+      "render_variance": 27992.737741673744,
+      "images": 1
+    },
+    {
+      "page": 21,
+      "text_characters": 1678,
+      "render_variance": 2033.4131767526796,
+      "images": 0
+    },
+    {
+      "page": 22,
+      "text_characters": 347,
+      "render_variance": 27945.92650056293,
+      "images": 1
+    },
+    {
+      "page": 23,
+      "text_characters": 2893,
+      "render_variance": 3937.243503783734,
+      "images": 0
+    },
+    {
+      "page": 24,
+      "text_characters": 341,
+      "render_variance": 28214.13841123938,
+      "images": 1
+    },
+    {
+      "page": 25,
+      "text_characters": 1794,
+      "render_variance": 1972.2917326367012,
+      "images": 0
+    },
+    {
+      "page": 26,
+      "text_characters": 346,
+      "render_variance": 28231.65886752776,
+      "images": 1
+    },
+    {
+      "page": 27,
+      "text_characters": 3530,
+      "render_variance": 7342.331116437315,
+      "images": 0
+    },
+    {
+      "page": 28,
+      "text_characters": 3332,
+      "render_variance": 3650.775647643649,
+      "images": 0
+    },
+    {
+      "page": 29,
+      "text_characters": 1186,
+      "render_variance": 1721.4999659472257,
+      "images": 0
+    },
+    {
+      "page": 30,
+      "text_characters": 350,
+      "render_variance": 27941.1951763656,
+      "images": 1
+    },
+    {
+      "page": 31,
+      "text_characters": 3757,
+      "render_variance": 4301.064195472466,
+      "images": 0
+    },
+    {
+      "page": 32,
+      "text_characters": 2992,
+      "render_variance": 6347.976619337789,
+      "images": 0
+    },
+    {
+      "page": 33,
+      "text_characters": 2718,
+      "render_variance": 3469.8270562022763,
+      "images": 0
+    },
+    {
+      "page": 34,
+      "text_characters": 2104,
+      "render_variance": 2420.538699888499,
+      "images": 0
+    }
+  ],
+  "screenshots": [
+    {
+      "page": 5,
+      "path": "evidence/screenshots/task0.png",
+      "pixels_match": true,
+      "sha256": "32a60b306e6dc6896af8b8b14fdef478801701399d2d0d97992f0b123c07a19b"
+    },
+    {
+      "page": 7,
+      "path": "evidence/screenshots/task1-trivy.png",
+      "pixels_match": true,
+      "sha256": "69486ec7fe4e2022af707289eaea64b1f400afdc589ace75c262055c7e1a9d62"
+    },
+    {
+      "page": 8,
+      "path": "evidence/screenshots/task1-pip-audit.png",
+      "pixels_match": true,
+      "sha256": "84d9413a2328d6590f758ef7b9f644ae092118fffbc0d802c18a71a991e991ef"
+    },
+    {
+      "page": 10,
+      "path": "evidence/screenshots/task2-attack-merged-attempt3.png",
+      "pixels_match": true,
+      "sha256": "c141252612f5b4918c9595ea8cf8e7f9ec24e18b6fd935ca1d89ce0edd55bb75"
+    },
+    {
+      "page": 11,
+      "path": "evidence/screenshots/task2-single-index-confirmed.png",
+      "pixels_match": true,
+      "sha256": "5d708c2f6f8cde9a5324e24828336ea6e23720cbfe43bc087a02d0ced350af54"
+    },
+    {
+      "page": 12,
+      "path": "evidence/screenshots/task2-race-confirmed.png",
+      "pixels_match": true,
+      "sha256": "172fa1e7b9db2abcf5cd28122797d89cf28847da94736a13c6b01646d613594a"
+    },
+    {
+      "page": 14,
+      "path": "evidence/screenshots/task3-local-build.png",
+      "pixels_match": true,
+      "sha256": "15926c227747ee7399b4bf63847305b0327e50e1c83478250902201ce30537d5"
+    },
+    {
+      "page": 15,
+      "path": "evidence/screenshots/task3-sbom-validation.png",
+      "pixels_match": true,
+      "sha256": "abd9f672963609601fd70741c64b0ee8541774c2587a0f1cb795adac3500d723"
+    },
+    {
+      "page": 17,
+      "path": "evidence/screenshots/task3-private-ghcr-publication.png",
+      "pixels_match": true,
+      "sha256": "2b5ddf0983a4073da4ae288186145d69821cde212ef7f0e013ab08bf565141b3"
+    },
+    {
+      "page": 19,
+      "path": "evidence/screenshots/task3-cosign-signing.png",
+      "pixels_match": true,
+      "sha256": "14775b8c864f01213912f6b28a1ad1a9fcdb19a93bb1397f198c8e0731ac9456"
+    },
+    {
+      "page": 20,
+      "path": "evidence/screenshots/task3-cosign-verification.png",
+      "pixels_match": true,
+      "sha256": "bbd1a41aad41140968a719b3a823107468a41889c78b66d9f4aeb75c8ba6845e"
+    },
+    {
+      "page": 22,
+      "path": "evidence/screenshots/task3-unsigned-negative.png",
+      "pixels_match": true,
+      "sha256": "ab286a8e0d7d84872f291f1e4a9902a618d9e63bb582e19e0285bb027b671d53"
+    },
+    {
+      "page": 24,
+      "path": "evidence/screenshots/task4-hashes-single-index.png",
+      "pixels_match": true,
+      "sha256": "6a929a85f47fc77c1969f93e11023974bae2dc3e4c8e61b1ce1dac8ddcee2eb3"
+    },
+    {
+      "page": 26,
+      "path": "evidence/screenshots/task4-signature-gate-confirmed.png",
+      "pixels_match": true,
+      "sha256": "d35702c0752336e816f007f6787340253db4eac6a4da5f53538d45dd60b9a1b3"
+    },
+    {
+      "page": 30,
+      "path": "evidence/screenshots/prompt-wrong-signer-rejection.png",
+      "pixels_match": true,
+      "sha256": "01a3cd01b02e4011aea0ac12208538d4a52ec58cd41e93b8ecc182700cd8031c"
+    }
+  ],
+  "instructor_hashes_unchanged": true,
+  "under_20_mib": true,
+  "personal_responses_approved": true,
+  "drafting_instructions_absent": true,
+  "pr_url": null,
+  "visual_review": "PASS: all 34 pages rendered and inspected using contact sheets; changed Audit the AI pages 28 and 29 also inspected at full page resolution. No blank pages, clipping or missing images."
+}

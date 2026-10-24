@@ -19,9 +19,9 @@ Existing evidence is authoritative. Do not rerun signing or publication scripts 
 
 The main report links the local defense code commit. That commit link becomes remotely resolvable only after a separately approved branch push. The PR URL remains unfilled because PR creation is not authorized.
 
-## Student review required
+## Personal responses approved
 
-The strongest-defense choice (single curated trusted index) is user-confirmed. Its rationale, personal reflection, EiPE and AI-critique prose are explicitly AI-assisted suggestions. Review and rewrite/adopt those parts in your own words before submitting; do not represent them as independently student-authored without review. Quiz completion and course-portal submission are not known/performed.
+Wanna San approved the reflection, EiPE, strongest-defense rationale and Audit the AI critique on 24 October 2026. AI assistance remains disclosed; the original interaction and technical evidence remain unchanged. GitHub publication still requires explicit approval. Quiz and course-portal submission remain student actions.
 
 ## Preserved but excluded material
 

@@ -159,6 +159,38 @@ for x in paths:
  else:
   a=j(x);code(shlex.join(a['command']));p('Actual exit: '+str(a['exit_status']))
 p('Artifact paths and hashes are indexed in evidence/final-qa/. The production gate is unchanged.')
+# Apply student-confirmed responses while retaining original technical evidence/transcripts.
+finalization_path=R/'support/finalization.json'
+if finalization_path.exists():
+ approved=json.loads(finalization_path.read_text())
+ assert approved['approval']=='Approve all four responses'
+ for node in N:
+  text=node.get('text','')
+  if node['kind']=='cover':node['status']='Personal responses approved | '+('GitHub PR published' if approved.get('pr_url') else 'GitHub publication pending approval')
+  if text.startswith('Student-confirmed choice:'):node['text']=approved['strongest_defense']
+  elif text.startswith('8.3 Suggested mitigation'):node['text']='8.3 Best mitigation and SLSA self-assessment'
+  elif text.startswith('Suggested reflection,'):node['text']=approved['reflection']+' [R7, R8]'
+  elif text.startswith('Suggested answer to “What did you do'):node['text']='What I did and why the vulnerability worked: The authorized exercise used a controlled resolver simulation that pooled private and public candidates and selected a higher public version. The saved SCA scans separately showed known advisories in the intentionally old dependency tree; they did not demonstrate that every endpoint was exploitable.'
+  elif text.startswith('Suggested answer to “Why does the fix'):node['text']='Why the fix stops it and what could still break it: One curated source excludes the competing index, reviewed hashes constrain acceptable bytes, and exact-identity verification requires approval of the same immutable digest. Compromised trusted sources/accounts, unreviewed hashes, gate bypass, or malicious-but-authorized dependencies can still defeat these assumptions.'
+  elif text=='9.1 Suggested critique for student review':node['text']='9.1 Student-approved critique'
+  elif text.startswith('Suggested 3-sentence correction'):node['text']=approved['audit']
+  elif text=='10.1 Explain in Plain English (EiPE) - suggested answer':node['text']='10.1 Explain in Plain English (EiPE)'
+  elif text.startswith('The small Flask app returns'):node['text']=approved['eipe']
+  elif text.startswith('Verification method actually performed:'):node['text']=text.replace(' Student review of the prompt/critique and ability to explain the evidence are still required.','')
+  elif text.startswith('Local defense commit:'):
+   node['text']='Defense code commit: '+CODECOMMIT+'. Commit link: https://github.com/6631503097/software-security/commit/'+CODECOMMIT+' . Repository: https://github.com/6631503097/software-security . Branch: wk12. '+('PR: '+approved['pr_url']+' .' if approved.get('pr_url') else 'GitHub publication awaits explicit push approval; no PR exists yet.')
+  elif text.startswith('Course actions for the student:'):
+   node['text']=text.replace('review/adopt the labeled personal text; obtain the final approved GitHub commit/PR links after publication; ','')
+  elif text.startswith('Submission readiness:'):
+   node['text']='The student confirmed the personal responses on 24 October 2026; AI assistance remains disclosed. '+('The GitHub PR is recorded above. ' if approved.get('pr_url') else 'Explicit approval for branch publication and PR creation is still pending. ')+'The student must complete the individual course-portal upload and confirm quiz status; neither action was performed by Codex.'
+  if node['kind']=='table' and node['headers']==['Student information','Recorded value']:
+   for row in node['rows']:
+    if row[0]=='Personal text status':row[1]='Reflection, EiPE, strongest-defense rationale and AI critique approved by Wanna San on 24 October 2026; AI assistance disclosed.'
+  if node['kind']=='table' and node['headers']==['Requirement / rubric','Status']:
+   replacements={'Task 4 defense (25%)':'Technical evidence, code gate and student-approved rationale supplied','Reflection (15%)':'Mapping, XZ analysis and student-approved SLSA self-assessment supplied','Audit the AI / EiPE / Prompt':'Actual interaction, verified correction and approved personal responses supplied','GitHub code fix':('PR: '+approved['pr_url'] if approved.get('pr_url') else 'Local defense commit exists; explicit push approval pending')}
+   for row in node['rows']:
+    if row[0] in replacements:row[1]=replacements[row[0]]
+
 (R/'support/final-report-content.json').write_text(json.dumps(N,ensure_ascii=False,indent=2)+'\n')
 md=[]
 for n in N:

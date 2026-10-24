@@ -2,7 +2,7 @@
 
 Wanna San | 6631503097 | The Imposters | 24 October 2026
 
-Technical evidence complete | Student review and Git publication pending
+Personal responses approved | GitHub publication pending approval
 
 ## 1. Assignment overview and evidence integrity
 
@@ -13,7 +13,7 @@ This report follows Worksheet 12 Parts 1-4 and the required Audit the AI, Explai
 | Name / ID | Wanna San / 6631503097 |
 | Group / date | The Imposters / 24 October 2026 |
 | AI disclosure | Codex inspected files, ran authorized commands, arranged captures, drafted explanations and produced this PDF. Student personally selected browser presets and completed GitHub OIDC/2FA. |
-| Personal text status | Suggested EiPE, critique and reflection are labeled for student review; no invented personal experience is presented. |
+| Personal text status | Reflection, EiPE, strongest-defense rationale and AI critique approved by Wanna San on 24 October 2026; AI assistance disclosed. |
 | Flag | Not issued in the repository evidence; conditional worksheet field is not applicable unless the instructor supplies one. |
 
 Observed results come from saved tool output, immutable digests and genuine screenshots. Technical commands were executed by Codex with explicit authorization; descriptions do not claim the student manually ran them. Simulations, read-only checks and actual registry/signing operations are identified separately. Earlier chronological notes are preserved in supporting/week12-working-history.md; this document gives the final state.
@@ -272,7 +272,7 @@ PyPI was the single source for this public-dependency demonstration, not a claim
 
 Practical proposal: define an organization-specific internal naming convention, enforce allowed package names and access controls in a private registry, and use one curated index. Reserving a public name where policy permits can reduce collisions, but a Python prefix is not enforceable namespace ownership or routing. No name was reserved or package published in this exercise.
 
-Student-confirmed choice: single curated trusted index. Suggested rationale - review before adopting: it removes the competing public source at the point of candidate selection and centralizes policy, directly matching the simulation before/after result. It is not sufficient alone: registry compromise and maintainer compromise remain, so reviewed hash locks, SCA and the signed-digest gate are complementary.
+I consider a single curated trusted index the strongest first defense for The Imposters because it removes competing public candidates during package selection and centralizes package policy. This matches the simulation, where the same versions selected the private package after switching to one trusted index. It still needs reviewed hashes and verification because the trusted registry or an authorized maintainer could be compromised.
 
 Remediation note (A03/A08; CWE-1357/CWE-829): enforce one vetted source and reviewed hash locks to reduce substitution and unapproved bytes. Keep SCA and compatibility testing because integrity controls do not fix the known CVEs (CWE-1395).
 
@@ -327,15 +327,15 @@ Andres Freund reported the upstream xz/liblzma backdoor on 29 March 2024 after i
 
 An SBOM can help find affected xz versions but does not identify malicious intent by itself. A valid upstream signature may faithfully authenticate a malicious release made through a compromised trusted maintainer. A provenance gate helps only when it verifies meaningful trusted source/build expectations and input relationships; matching an approved signer alone would not necessarily catch this backdoor. Independent release review, comparison of generated tarballs to source, controlled builds and behavioral investigation provide additional evidence. These are analysis and recommendations, not tests performed against XZ in this lab. [R11, R8]
 
-### 8.3 Suggested mitigation and SLSA self-assessment - student review required
+### 8.3 Best mitigation and SLSA self-assessment
 
-Suggested reflection, not a statement of private experience: The evidence demonstrates a component inventory, an identity-bound signature, unsigned-image rejection, and a signature-gated simulated deployment. It does not establish a SLSA level because the BuildKit attestation was not fully assessed and no trusted build-platform provenance policy was verified. The student chose a single curated trusted index as the strongest defense; the proposed reason is that it removes competing public candidates before installation, while hashes and verified release digests address different integrity boundaries. Review and rewrite this paragraph in your own words before submitting. [R7, R8]
+The lab showed me how an SBOM identifies affected components, while an identity-bound signature and a verification gate protect a different boundary: approval of an exact image digest. I cannot claim a SLSA level because I did not verify complete build provenance or trusted-builder guarantees. For The Imposters, I would prioritize one curated trusted index, supported by reviewed hashes, dependency scanning, and signed-digest verification. [R7, R8]
 
 ### 8.4 Evidence & Integrity: suggested own-words explanations
 
-Suggested answer to “What did you do and why did the vulnerability work?”: The controlled resolver simulation pooled private and public candidates and selected a higher public version. The SCA scans separately showed known advisories in the intentionally old dependency tree; they did not demonstrate that every endpoint was exploitable.
+What I did and why the vulnerability worked: The authorized exercise used a controlled resolver simulation that pooled private and public candidates and selected a higher public version. The saved SCA scans separately showed known advisories in the intentionally old dependency tree; they did not demonstrate that every endpoint was exploitable.
 
-Suggested answer to “Why does the fix stop it and what could still break it?”: One curated source excludes the competing index, hashes constrain acceptable bytes, and exact-identity verification requires approval of the same immutable digest. Compromised trusted sources/accounts, unreviewed hashes, gate bypass or malicious-but-authorized dependencies can still defeat those assumptions. These explanations are AI-assisted suggestions awaiting student adoption.
+Why the fix stops it and what could still break it: One curated source excludes the competing index, reviewed hashes constrain acceptable bytes, and exact-identity verification requires approval of the same immutable digest. Compromised trusted sources/accounts, unreviewed hashes, gate bypass, or malicious-but-authorized dependencies can still defeat these assumptions.
 
 ## 9. Audit the AI - actual response, critique and verified correction
 
@@ -364,7 +364,7 @@ Remaining written work: personalize the namespace-scoping explanation, explain t
 No instructor or `wk06` changes, additional publication/signing, Git commits/pushes, PR, or PDF generation occurred.
 ```
 
-### 9.1 Suggested critique for student review
+### 9.1 Student-approved critique
 
 Exact line under review: “Verification gate: the signed, digest-pinned image passed the exact email/issuer policy, exit 0, allowing only a simulated deployment.” This is factually supported, but an incomplete security-verification story: a positive result alone does not demonstrate the gate denies an unauthorized signer. The original technical report explicitly left that branch unexercised; the full response did not provide a negative gate result. This is a missed verification edge case, not a fabricated error in otherwise correct statements.
 
@@ -374,7 +374,7 @@ A second limitation is the exact line “Single index: demonstrated --index-url 
 
 To close the missing check, Codex ran a temporary copy of the existing gate that changed only the expected email to unauthorized-signer@example.invalid. The original defense script was unchanged. Actual command: bash tmp/week12-final-qa/gate-wrong-identity.sh . It exited 1 with an explicit certificate-identity mismatch, printed DENY and never printed ALLOW. No deployment, signing or publication occurred. The necessary new result is in evidence/final-qa/gate-wrong-identity-*; the earlier actual success result remains in evidence/task4/.
 
-Suggested 3-sentence correction - student review required: A passing signature check establishes the expected signer for this digest, but does not by itself prove denial behavior or trustworthy build provenance. The same gate now has a genuine wrong-identity rejection, while the original unsigned-image test separately proves missing-signature rejection. This strengthens the observed signature-policy evidence without claiming a full lockfile, a private-index implementation or a SLSA level.
+The statement ‘the signed, digest-pinned image passed the exact email/issuer policy’ showed success, but did not prove that the gate rejects an unauthorized signer. The additional wrong-identity test exited 1 with DENY and no ALLOW, closing that missing check; the unsigned-image test separately demonstrated missing-signature rejection. The single-index command was also only a clean public-source demonstration, not a configured private registry, and neither signatures nor an SBOM establish a SLSA level.
 
 ![Audit the AI / Prompt Problem: genuine newly necessary wrong-signer gate test; exit 1, DENY true, ALLOW false, no deployment. Exact identity stamp visible.](evidence/screenshots/prompt-wrong-signer-rejection.png)
 
@@ -382,9 +382,9 @@ Audit the AI / Prompt Problem: genuine newly necessary wrong-signer gate test; e
 
 ## 10. Comprehension & Prompt
 
-### 10.1 Explain in Plain English (EiPE) - suggested answer
+### 10.1 Explain in Plain English (EiPE)
 
-The small Flask app returns simple JSON at / and /health, but its image brings in an intentionally old dependency tree. The exercise shows how software can inherit known flaws or choose the wrong package before the app itself runs. The simulation demonstrates source confusion; the scans show dependency advisories rather than a demonstrated exploit of these endpoints. [Student review: rewrite these three sentences in your own words.]
+The Flask app returns simple JSON at / and /health, but its image includes intentionally outdated dependencies. The simulation shows how combining package sources can select an attacker-controlled public package before the application runs. The scans identify known dependency vulnerabilities; they do not prove an exploit of these endpoints.
 
 ### 10.2 Prompt Problem - actual final prompt and verification
 
@@ -419,28 +419,28 @@ Do not commit, push Git code, create a PR, or generate the final PDF yet.
 Stop after the technical exercises and report the results and remaining written requirements.
 ```
 
-Verification method actually performed: (1) reuse the recorded original gate PASS, exit 0; (2) inspect the original hardcoded digest/email/issuer and failure-exit handling; (3) run only the newly necessary wrong-email fixture, which exited 1 with a certificate-identity mismatch and no ALLOW. The proposed unauthorized-signer acceptance fails under that policy. This is a verification of signer-policy enforcement, not a live dependency-confusion exploit or complete SLSA gate. Student review of the prompt/critique and ability to explain the evidence are still required.
+Verification method actually performed: (1) reuse the recorded original gate PASS, exit 0; (2) inspect the original hardcoded digest/email/issuer and failure-exit handling; (3) run only the newly necessary wrong-email fixture, which exited 1 with a certificate-identity mismatch and no ALLOW. The proposed unauthorized-signer acceptance fails under that policy. This is a verification of signer-policy enforcement, not a live dependency-confusion exploit or complete SLSA gate.
 
 ## 11. Conclusion and GitHub/course submission
 
 The lab produced genuine SCA evidence, a controlled dependency-confusion comparison, an image-derived CycloneDX inventory, a private published image, a matching-identity signature, missing-signature rejection and a simulated pre-deploy gate. Hash enforcement refused the original unhashed file. These are complementary trust controls, with explicitly recorded limits: no production deployment, no full hashed lockfile, no package-version remediation and no supported SLSA-level claim.
 
-Local defense commit: 336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b. Prospective commit link (not remotely resolvable until a separately approved push): https://github.com/6631503097/software-security/commit/336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b . Repository: https://github.com/6631503097/software-security . Branch: wk12. PR URL: NOT CREATED - explicit push/PR approval required. This PDF cannot truthfully claim a submitted GitHub code fix yet.
+Defense code commit: 336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b. Commit link: https://github.com/6631503097/software-security/commit/336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b . Repository: https://github.com/6631503097/software-security . Branch: wk12. GitHub publication awaits explicit push approval; no PR exists yet.
 
-Course actions for the student: review/adopt the labeled personal text; obtain the final approved GitHub commit/PR links after publication; upload Wk12_6631503097.pdf to https://learn.zcr.ai/submit using your issued submission code. Complete the individual one-attempt quiz at https://learn.zcr.ai/quiz using the issued code; no quiz attempt or portal upload was performed by Codex. The repository portal implementation (labs/live-quiz/submission.py) sets a 20 MiB per-file limit; the PDF is checked below that limit without changing screenshot pixels. The repository deadline rule is before the next class unless the instructor says otherwise; the exact class date was not inferred. Quizzes are individual and irreversible between questions.
+Course actions for the student: upload Wk12_6631503097.pdf to https://learn.zcr.ai/submit using your issued submission code. Complete the individual one-attempt quiz at https://learn.zcr.ai/quiz using the issued code; no quiz attempt or portal upload was performed by Codex. The repository portal implementation (labs/live-quiz/submission.py) sets a 20 MiB per-file limit; the PDF is checked below that limit without changing screenshot pixels. The repository deadline rule is before the next class unless the instructor says otherwise; the exact class date was not inferred. Quizzes are individual and irreversible between questions.
 
 | Requirement / rubric | Status |
 |---|---|
 | Lecture questions (20%) | Five sourced answers supplied |
 | Tasks 0-3 and evidence (40%) | Observed results, commands, status and screenshots supplied |
-| Task 4 defense (25%) | Technical evidence and code gate supplied; rationale draft needs student review |
-| Reflection (15%) | Mapping, XZ analysis and cautious self-assessment supplied as labeled suggested text |
-| Audit the AI / EiPE / Prompt | Actual interaction preserved; technical verification complete; student critique/own-words adoption pending |
+| Task 4 defense (25%) | Technical evidence, code gate and student-approved rationale supplied |
+| Reflection (15%) | Mapping, XZ analysis and student-approved SLSA self-assessment supplied |
+| Audit the AI / EiPE / Prompt | Actual interaction, verified correction and approved personal responses supplied |
 | Identity screenshots | 15 accepted originals embedded; rejected captures excluded |
-| GitHub code fix | Local defense commit exists; branch push/PR not authorized or performed |
+| GitHub code fix | Local defense commit exists; explicit push approval pending |
 | PDF / quiz / portal | PDF generated and checked; quiz status unknown; portal submission pending |
 
-Submission readiness: technically assembled, but not fully submitted or ready to represent as entirely student-authored. Personal-text review, separately approved GitHub publication/PR, and the student portal/quiz actions remain. No personal opinion is fabricated; the chosen strongest defense is user-confirmed and the reason is explicitly suggested.
+The student confirmed the personal responses on 24 October 2026; AI assistance remains disclosed. Explicit approval for branch publication and PR creation is still pending. The student must complete the individual course-portal upload and confirm quiz status; neither action was performed by Codex.
 
 ## 12. References
 

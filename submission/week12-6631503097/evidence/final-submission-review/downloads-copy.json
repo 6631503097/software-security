@@ -1,0 +1,11 @@
+{
+  "source": "/private/tmp/software-security-wk12/submission/week12-6631503097/Wk12_6631503097.pdf",
+  "destination": "/Users/wannasan/Downloads/Wk12_6631503097.pdf",
+  "bytes": 17391312,
+  "sha256_source": "dcb7b10c35939558f45aff1886ddb68e2ee79e54c30c8d5ed6c74c1d442371a7",
+  "sha256_downloads": "dcb7b10c35939558f45aff1886ddb68e2ee79e54c30c8d5ed6c74c1d442371a7",
+  "match": true,
+  "method": "shutil.copy2",
+  "status": "Approved personal responses; PR publication still awaits approval",
+  "timestamp": "2026-10-24T15:23:36.991182+00:00"
+}

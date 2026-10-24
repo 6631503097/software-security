@@ -37,7 +37,7 @@ class Report(BaseDocTemplate):
  def afterFlowable(self,f):
   if isinstance(f,Paragraph) and f.style.name=='h1':
    key='section-'+str(self.seq.nextf('section'));self.canv.bookmarkPage(key);self.canv.addOutlineEntry(f.getPlainText(),key,level=0,closed=False)
-output=R/'Wk12_6631503097.pdf';doc=Report(str(output),pagesize=A4,title='Week 12 - Software Supply-Chain Security - Wanna San 6631503097',author='Wanna San (AI-assisted drafting disclosed)',subject='Verified Tasks 0-4 and student-review pending written sections',leftMargin=42,rightMargin=42,topMargin=48,bottomMargin=40)
+output=R/'Wk12_6631503097.pdf';doc=Report(str(output),pagesize=A4,title='Week 12 - Software Supply-Chain Security - Wanna San 6631503097',author='Wanna San (AI-assisted drafting disclosed)',subject='Verified Tasks 0-4 and student-approved personal responses',leftMargin=42,rightMargin=42,topMargin=48,bottomMargin=40)
 doc.addPageTemplates([PageTemplate(id='Body',frames=Frame(42,40,bodyw-84,bodyh-88,id='body',leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0),onPage=page,pagesize=A4),PageTemplate(id='Evidence',frames=Frame(38,38,ew-76,eh-84,id='evidence',leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0),onPage=page,pagesize=landscape(A3))])
 story=[];lastshot=False;images=[]
 for n in json.loads((R/'support/final-report-content.json').read_text()):
@@ -46,11 +46,13 @@ for n in json.loads((R/'support/final-report-content.json').read_text()):
  if kind=='cover':
   story += [Spacer(1,70),para(n['subtitle'],'h2'),Paragraph(safe(n['title']),styles['cover']),para('Week 12 assignment report','h1'),Spacer(1,20)]
   for label,key in [('Student','student'),('Student ID','student_id'),('Group','group'),('Date','date')]:story.append(para(label+': '+n[key]))
-  story += [Spacer(1,25),para(n['status'],'h2'),para('Observed technical results are complete. Suggested personal text is clearly labeled and requires student review. Branch push, pull request, quiz and course-portal submission are not represented as completed.'),Spacer(1,25),para('Evidence pages retain complete original screenshots. No authentication secrets are included.','small'),PageBreak()]
+  story += [Spacer(1,25),para(n['status'],'h2'),para('Technical evidence and student-approved personal responses are complete. GitHub publication status is recorded in Section 11. Course-portal upload and quiz completion remain student actions.'),Spacer(1,25),para('Evidence pages retain complete original screenshots. No authentication secrets are included.','small'),PageBreak()]
  elif kind=='section':
   if n['text'].startswith('3. Task 0'):story.append(PageBreak())
   story.append(para(n['text'],'h1'))
- elif kind=='heading':story.append(para(n['text'],'h2'))
+ elif kind=='heading':
+  if n['text'].startswith('9.2 Actual additional verification'):story.append(PageBreak())
+  story.append(para(n['text'],'h2'))
  elif kind=='paragraph':story.append(para(n['text']))
  elif kind in ['code','quote']:
   # Visual wraps only; exact source text and command JSON remain preserved.
