@@ -1,0 +1,372 @@
+{
+  "damaged": {
+    "bytes": 64165678,
+    "sha256": "26787cc5f075e3b49d52be8b5cd5475cf278df9689643d95b738faba3e140f33",
+    "utf8_replacement_sequences": 14988146,
+    "pypdf": {
+      "error": "Broken xref table"
+    },
+    "pymupdf": {
+      "pages": 34,
+      "total_text_characters": 0,
+      "sample_text": {
+        "1": "",
+        "18": "",
+        "34": ""
+      }
+    }
+  },
+  "committed": {
+    "bytes": 17391866,
+    "sha256": "0765f34cafa0054e36b7b965d0af6e0fc2133f38624db75354bf3e105696d801",
+    "utf8_replacement_sequences": 3,
+    "pypdf": {
+      "pages": 34,
+      "total_text_characters": 48942,
+      "sample_text": {
+        "1": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 1\nSoftware Security (KOSEN69) | Week 12\nSoftware Supply-Chain Security\nWeek 12 assignment report\nStudent: Wanna San\nStudent ID: 6631503097\nGroup: The Imposters\nDate: 24 October 2026\nTechnical evidence complete | Student review and Git publication pending\nObserved technical results are complete. Suggested personal text is clearly labeled and requires student review.\nBranch push, pull request, quiz and course-portal submission are not represented as completed.\nEvidence pages retain complete original screenshots. No authentication secrets are included.\n",
+        "18": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 18\n6.3 Approved keyless signing and exact-policy verification\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nOfficial Cosign v3.1.4 exited 0. The student explicitly approved keyless signing and public metadata disclosure, then\npersonally completed GitHub OIDC/2FA. --yes applied that existing consent; normal selected browser\nauthentication and ambient providers were disabled. Only sanitized nonsecret progress was retained: ephemeral\nkeys generated, artifact signed, bundle written, and signature pushed to the private GHCR repository. Raw auth\nURLs, codes and tokens were not stored.\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f",
+        "34": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 34\nActual exit: 0\nevidence/task3-publication/push-status.json\ndocker push ghcr.io/6631503097/week12-supplychain:lab\nActual exit: 0\nevidence/task3-signing/sign-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nActual exit: 0\nevidence/task3-signing/verify-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8\ncd0ed10e2e8a6\nActual exit: 0\nevidence/task3-negative/verify-worksheet-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity-regexp '.*' \n--certificate-oidc-issuer-regexp '.*' python:3.9-slim\nActual exit: 10\nevidence/task3-negative/verify-pinned-status."
+      }
+    },
+    "pymupdf": {
+      "pages": 34,
+      "total_text_characters": 48942,
+      "sample_text": {
+        "1": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 1\nSoftware Security (KOSEN69) | Week 12\nSoftware Supply-Chain Security\nWeek 12 assignment report\nStudent: Wanna San\nStudent ID: 6631503097\nGroup: The Imposters\nDate: 24 October 2026\nTechnical evidence complete | Student review and Git publication pending\nObserved technical results are complete. Suggested personal text is clearly labeled and requires student review.\nBranch push, pull request, quiz and course-portal submission are not represented as completed.\nEvidence pages retain complete original screenshots. No authentication secrets are included.\n",
+        "18": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 18\n6.3 Approved keyless signing and exact-policy verification\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nOfficial Cosign v3.1.4 exited 0. The student explicitly approved keyless signing and public metadata disclosure, then\npersonally completed GitHub OIDC/2FA. --yes applied that existing consent; normal selected browser\nauthentication and ambient providers were disabled. Only sanitized nonsecret progress was retained: ephemeral\nkeys generated, artifact signed, bundle written, and signature pushed to the private GHCR repository. Raw auth\nURLs, codes and tokens were not stored.\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f",
+        "34": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 34\nActual exit: 0\nevidence/task3-publication/push-status.json\ndocker push ghcr.io/6631503097/week12-supplychain:lab\nActual exit: 0\nevidence/task3-signing/sign-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nActual exit: 0\nevidence/task3-signing/verify-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8\ncd0ed10e2e8a6\nActual exit: 0\nevidence/task3-negative/verify-worksheet-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity-regexp '.*' \n--certificate-oidc-issuer-regexp '.*' python:3.9-slim\nActual exit: 10\nevidence/task3-negative/verify-pinned-status."
+      }
+    }
+  },
+  "regenerated": {
+    "bytes": 17391866,
+    "sha256": "408ad15ff53804928628134746f677d982743cab76cad6422ba5b08a546629ae",
+    "utf8_replacement_sequences": 3,
+    "pypdf": {
+      "pages": 34,
+      "total_text_characters": 48942,
+      "sample_text": {
+        "1": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 1\nSoftware Security (KOSEN69) | Week 12\nSoftware Supply-Chain Security\nWeek 12 assignment report\nStudent: Wanna San\nStudent ID: 6631503097\nGroup: The Imposters\nDate: 24 October 2026\nTechnical evidence complete | Student review and Git publication pending\nObserved technical results are complete. Suggested personal text is clearly labeled and requires student review.\nBranch push, pull request, quiz and course-portal submission are not represented as completed.\nEvidence pages retain complete original screenshots. No authentication secrets are included.\n",
+        "18": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 18\n6.3 Approved keyless signing and exact-policy verification\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nOfficial Cosign v3.1.4 exited 0. The student explicitly approved keyless signing and public metadata disclosure, then\npersonally completed GitHub OIDC/2FA. --yes applied that existing consent; normal selected browser\nauthentication and ambient providers were disabled. Only sanitized nonsecret progress was retained: ephemeral\nkeys generated, artifact signed, bundle written, and signature pushed to the private GHCR repository. Raw auth\nURLs, codes and tokens were not stored.\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f",
+        "34": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 34\nActual exit: 0\nevidence/task3-publication/push-status.json\ndocker push ghcr.io/6631503097/week12-supplychain:lab\nActual exit: 0\nevidence/task3-signing/sign-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nActual exit: 0\nevidence/task3-signing/verify-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8\ncd0ed10e2e8a6\nActual exit: 0\nevidence/task3-negative/verify-worksheet-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity-regexp '.*' \n--certificate-oidc-issuer-regexp '.*' python:3.9-slim\nActual exit: 10\nevidence/task3-negative/verify-pinned-status."
+      }
+    },
+    "pymupdf": {
+      "pages": 34,
+      "total_text_characters": 48942,
+      "sample_text": {
+        "1": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 1\nSoftware Security (KOSEN69) | Week 12\nSoftware Supply-Chain Security\nWeek 12 assignment report\nStudent: Wanna San\nStudent ID: 6631503097\nGroup: The Imposters\nDate: 24 October 2026\nTechnical evidence complete | Student review and Git publication pending\nObserved technical results are complete. Suggested personal text is clearly labeled and requires student review.\nBranch push, pull request, quiz and course-portal submission are not represented as completed.\nEvidence pages retain complete original screenshots. No authentication secrets are included.\n",
+        "18": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 18\n6.3 Approved keyless signing and exact-policy verification\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nOfficial Cosign v3.1.4 exited 0. The student explicitly approved keyless signing and public metadata disclosure, then\npersonally completed GitHub OIDC/2FA. --yes applied that existing consent; normal selected browser\nauthentication and ambient providers were disabled. Only sanitized nonsecret progress was retained: ephemeral\nkeys generated, artifact signed, bundle written, and signature pushed to the private GHCR repository. Raw auth\nURLs, codes and tokens were not stored.\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f",
+        "34": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 34\nActual exit: 0\nevidence/task3-publication/push-status.json\ndocker push ghcr.io/6631503097/week12-supplychain:lab\nActual exit: 0\nevidence/task3-signing/sign-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nActual exit: 0\nevidence/task3-signing/verify-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8\ncd0ed10e2e8a6\nActual exit: 0\nevidence/task3-negative/verify-worksheet-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity-regexp '.*' \n--certificate-oidc-issuer-regexp '.*' python:3.9-slim\nActual exit: 10\nevidence/task3-negative/verify-pinned-status."
+      }
+    }
+  },
+  "timestamp": "2026-10-24T15:07:24.376050+00:00",
+  "all_pages": [
+    {
+      "page": 1,
+      "text_characters": 632,
+      "render_variance": 2073.672031712685,
+      "images": 0
+    },
+    {
+      "page": 2,
+      "text_characters": 3036,
+      "render_variance": 9256.804641476545,
+      "images": 0
+    },
+    {
+      "page": 3,
+      "text_characters": 2460,
+      "render_variance": 3516.7952369196205,
+      "images": 0
+    },
+    {
+      "page": 4,
+      "text_characters": 1724,
+      "render_variance": 5280.177547015799,
+      "images": 0
+    },
+    {
+      "page": 5,
+      "text_characters": 289,
+      "render_variance": 27709.394344905733,
+      "images": 1
+    },
+    {
+      "page": 6,
+      "text_characters": 1876,
+      "render_variance": 9204.549926638665,
+      "images": 0
+    },
+    {
+      "page": 7,
+      "text_characters": 315,
+      "render_variance": 27954.56214192415,
+      "images": 1
+    },
+    {
+      "page": 8,
+      "text_characters": 302,
+      "render_variance": 28004.14296693461,
+      "images": 1
+    },
+    {
+      "page": 9,
+      "text_characters": 1521,
+      "render_variance": 5122.863214903281,
+      "images": 0
+    },
+    {
+      "page": 10,
+      "text_characters": 316,
+      "render_variance": 28087.237696086097,
+      "images": 1
+    },
+    {
+      "page": 11,
+      "text_characters": 329,
+      "render_variance": 28315.696008133717,
+      "images": 1
+    },
+    {
+      "page": 12,
+      "text_characters": 317,
+      "render_variance": 28308.38188670665,
+      "images": 1
+    },
+    {
+      "page": 13,
+      "text_characters": 2785,
+      "render_variance": 6488.287703049676,
+      "images": 0
+    },
+    {
+      "page": 14,
+      "text_characters": 320,
+      "render_variance": 28059.639217042633,
+      "images": 1
+    },
+    {
+      "page": 15,
+      "text_characters": 318,
+      "render_variance": 28014.269925342072,
+      "images": 1
+    },
+    {
+      "page": 16,
+      "text_characters": 1150,
+      "render_variance": 1499.2287269055782,
+      "images": 0
+    },
+    {
+      "page": 17,
+      "text_characters": 313,
+      "render_variance": 28066.884801526714,
+      "images": 1
+    },
+    {
+      "page": 18,
+      "text_characters": 2030,
+      "render_variance": 2486.338110707526,
+      "images": 0
+    },
+    {
+      "page": 19,
+      "text_characters": 330,
+      "render_variance": 27993.643349779188,
+      "images": 1
+    },
+    {
+      "page": 20,
+      "text_characters": 335,
+      "render_variance": 27992.737741673744,
+      "images": 1
+    },
+    {
+      "page": 21,
+      "text_characters": 1678,
+      "render_variance": 2033.4131767526796,
+      "images": 0
+    },
+    {
+      "page": 22,
+      "text_characters": 347,
+      "render_variance": 27945.92650056293,
+      "images": 1
+    },
+    {
+      "page": 23,
+      "text_characters": 2865,
+      "render_variance": 3899.3555148028736,
+      "images": 0
+    },
+    {
+      "page": 24,
+      "text_characters": 341,
+      "render_variance": 28214.13841123938,
+      "images": 1
+    },
+    {
+      "page": 25,
+      "text_characters": 1794,
+      "render_variance": 1972.2917326367012,
+      "images": 0
+    },
+    {
+      "page": 26,
+      "text_characters": 346,
+      "render_variance": 28231.65886752776,
+      "images": 1
+    },
+    {
+      "page": 27,
+      "text_characters": 3641,
+      "render_variance": 7481.409065077669,
+      "images": 0
+    },
+    {
+      "page": 28,
+      "text_characters": 3582,
+      "render_variance": 3977.408396529069,
+      "images": 0
+    },
+    {
+      "page": 29,
+      "text_characters": 1172,
+      "render_variance": 1690.8454437860487,
+      "images": 0
+    },
+    {
+      "page": 30,
+      "text_characters": 350,
+      "render_variance": 27941.1951763656,
+      "images": 1
+    },
+    {
+      "page": 31,
+      "text_characters": 3964,
+      "render_variance": 4550.397168209321,
+      "images": 0
+    },
+    {
+      "page": 32,
+      "text_characters": 3164,
+      "render_variance": 6557.188739685834,
+      "images": 0
+    },
+    {
+      "page": 33,
+      "text_characters": 2881,
+      "render_variance": 3639.765491170428,
+      "images": 0
+    },
+    {
+      "page": 34,
+      "text_characters": 2119,
+      "render_variance": 2438.0568602975445,
+      "images": 0
+    }
+  ],
+  "required_sections": {
+    "lecture answers": true,
+    "Task 0": true,
+    "Task 1": true,
+    "Task 2": true,
+    "Task 3": true,
+    "Task 4": true,
+    "Audit the AI": true,
+    "Explain in Plain English": true,
+    "Prompt Problem": true,
+    "XZ": true,
+    "References": true,
+    "reflection": true
+  },
+  "screenshots": [
+    {
+      "page": 5,
+      "original": "evidence/screenshots/task0.png",
+      "pixels_match": true
+    },
+    {
+      "page": 7,
+      "original": "evidence/screenshots/task1-trivy.png",
+      "pixels_match": true
+    },
+    {
+      "page": 8,
+      "original": "evidence/screenshots/task1-pip-audit.png",
+      "pixels_match": true
+    },
+    {
+      "page": 10,
+      "original": "evidence/screenshots/task2-attack-merged-attempt3.png",
+      "pixels_match": true
+    },
+    {
+      "page": 11,
+      "original": "evidence/screenshots/task2-single-index-confirmed.png",
+      "pixels_match": true
+    },
+    {
+      "page": 12,
+      "original": "evidence/screenshots/task2-race-confirmed.png",
+      "pixels_match": true
+    },
+    {
+      "page": 14,
+      "original": "evidence/screenshots/task3-local-build.png",
+      "pixels_match": true
+    },
+    {
+      "page": 15,
+      "original": "evidence/screenshots/task3-sbom-validation.png",
+      "pixels_match": true
+    },
+    {
+      "page": 17,
+      "original": "evidence/screenshots/task3-private-ghcr-publication.png",
+      "pixels_match": true
+    },
+    {
+      "page": 19,
+      "original": "evidence/screenshots/task3-cosign-signing.png",
+      "pixels_match": true
+    },
+    {
+      "page": 20,
+      "original": "evidence/screenshots/task3-cosign-verification.png",
+      "pixels_match": true
+    },
+    {
+      "page": 22,
+      "original": "evidence/screenshots/task3-unsigned-negative.png",
+      "pixels_match": true
+    },
+    {
+      "page": 24,
+      "original": "evidence/screenshots/task4-hashes-single-index.png",
+      "pixels_match": true
+    },
+    {
+      "page": 26,
+      "original": "evidence/screenshots/task4-signature-gate-confirmed.png",
+      "pixels_match": true
+    },
+    {
+      "page": 30,
+      "original": "evidence/screenshots/prompt-wrong-signer-rejection.png",
+      "pixels_match": true
+    }
+  ],
+  "under_20_mib": true,
+  "rendered_pages": [
+    1,
+    10,
+    20,
+    34
+  ],
+  "visual_review": "PASS: pages 1, 10, 20, 34 inspected; nonblank and readable. Real macOS Preview screen capture also inspected and readable.",
+  "preview_screen": "preview-screen.png"
+}

@@ -1,0 +1,15 @@
+{
+  "reproduced_transformations": [],
+  "damaged_bytes": 64165678,
+  "damaged_sha256": "26787cc5f075e3b49d52be8b5cd5475cf278df9689643d95b738faba3e140f33",
+  "committed_bytes": 17391866,
+  "committed_sha256": "0765f34cafa0054e36b7b965d0af6e0fc2133f38624db75354bf3e105696d801",
+  "damaged_replacement_sequences": 14988146,
+  "application_responsible": "not established",
+  "preserved_damaged_file": "tmp/pdf-recovery-preserved/damaged-original.pdf",
+  "diagnosis": "Binary data was decoded/re-encoded as text, replacing non-text bytes with U+FFFD; precise application and transformation sequence not established. Committed original validates with both independent readers; damaged disk and pre-repair Downloads copy share the same SHA-256.",
+  "startxref_declared": 17388845,
+  "actual_xref_offset": 64162657,
+  "damaged_pypdf_error": "Broken xref table",
+  "damaged_pymupdf_extractable_text_characters": 0
+}

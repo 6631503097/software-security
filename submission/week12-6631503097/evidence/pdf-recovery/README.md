@@ -1,0 +1,11 @@
+# PDF corruption repair — 24 October 2026
+
+The disk PDF and pre-repair Downloads copy were 64,165,678 bytes and shared SHA-256 `26787cc5f075e3b49d52be8b5cd5475cf278df9689643d95b738faba3e140f33`. Strict pypdf reported `Broken xref table`; PyMuPDF found 34 page records but zero extractable text. 14,988,146 UTF-8 replacement-character sequences and stale cross-reference offsets demonstrate binary-to-text damage. The exact application responsible is not established; the original committed PDF was valid, so corruption occurred after generation/commit.
+
+The damaged original is preserved at `tmp/pdf-recovery-preserved/damaged-original.pdf`, excluded from Git along with the isolated validation environment. The intact previous Git blob is separately preserved there as `committed-original.pdf`.
+
+The PDF was regenerated directly with the existing ReportLab binary writer and unchanged structured report content / original screenshot PNGs. No PDF bytes passed through text, JSON, Markdown, or chat. Build stdout/stderr are preserved here; build and validation exited 0. JSON records contain metadata and extracted readable text only, never PDF binary data.
+
+The regenerated PDF is 17,391,866 bytes (16.59 MiB), 34 pages, SHA-256 `408ad15ff53804928628134746f677d982743cab76cad6422ba5b08a546629ae`. Independent PyMuPDF and strict pypdf checks both extracted 48,942 characters. First, middle (18), and last page text is recorded in `validation.json`. All 34 pages render nonblank; all required section checks passed; all 15 embedded screenshot images exactly match the original PNG pixels. Rendered pages 1, 10, 20, and 34 were visually inspected and are included here. `preview-screen.png` is a genuine full-screen host capture confirming readable rendering in macOS Preview; it is repair QA, not replacement lab evidence.
+
+The verified file was copied using `shutil.copy2` to `/Users/wannasan/Downloads/Wk12_6631503097.pdf` and opened with Preview. Both source and destination SHA-256 hashes match; see `downloads-copy.json`. The prior `evidence/final-qa/pdf-structure-check.json` remains preserved as the pre-corruption historical validation record; this directory supplies the current validation and hash. All lab evidence and instructor files remain unchanged. No Git push or PR was performed.

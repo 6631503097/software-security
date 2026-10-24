@@ -1,0 +1,10 @@
+{
+  "source": "/private/tmp/software-security-wk12/submission/week12-6631503097/Wk12_6631503097.pdf",
+  "destination": "/Users/wannasan/Downloads/Wk12_6631503097.pdf",
+  "bytes": 17391866,
+  "source_sha256": "408ad15ff53804928628134746f677d982743cab76cad6422ba5b08a546629ae",
+  "downloads_sha256": "408ad15ff53804928628134746f677d982743cab76cad6422ba5b08a546629ae",
+  "byte_for_byte_match": true,
+  "method": "shutil.copy2 (binary-safe filesystem copy)",
+  "timestamp": "2026-10-24T15:07:42.847594+00:00"
+}
