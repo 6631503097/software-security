@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-10-24T15:22:24.303075+00:00",
-  "bytes": 17391312,
-  "sha256": "dcb7b10c35939558f45aff1886ddb68e2ee79e54c30c8d5ed6c74c1d442371a7",
+  "timestamp": "2026-10-24T15:26:52.089140+00:00",
+  "bytes": 17391749,
+  "sha256": "fa9dc19cb3acd03b1049380707390dd29f9167dc514b4174978b18798d8c1492",
   "page_count": 34,
   "readers": [
     "PyMuPDF",
     "pypdf strict=True"
   ],
-  "extracted_text_characters": 48053,
+  "extracted_text_characters": 47993,
   "first_middle_last_text": {
-    "1": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 1\nSoftware Security (KOSEN69) | Week 12\nSoftware Supply-Chain Security\nWeek 12 assignment report\nStudent: Wanna San\nStudent ID: 6631503097\nGroup: The Imposters\nDate: 24 October 2026\nPersonal responses approved | GitHub publication pending approval\nTechnical evidence and student-approved personal responses are complete. GitHub publication status is recorded\nin Section 11. Course-portal upload and quiz completion remain student actions.\nEvidence pages retain complete original screenshots. No authentication secrets are included.\n",
+    "1": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 1\nSoftware Security (KOSEN69) | Week 12\nSoftware Supply-Chain Security\nWeek 12 assignment report\nStudent: Wanna San\nStudent ID: 6631503097\nGroup: The Imposters\nDate: 24 October 2026\nPersonal responses approved | GitHub PR published\nTechnical evidence and student-approved personal responses are complete. GitHub publication status is recorded\nin Section 11. Course-portal upload and quiz completion remain student actions.\nEvidence pages retain complete original screenshots. No authentication secrets are included.\n",
     "18": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 18\n6.3 Approved keyless signing and exact-policy verification\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nOfficial Cosign v3.1.4 exited 0. The student explicitly approved keyless signing and public metadata disclosure, then\npersonally completed GitHub OIDC/2FA. --yes applied that existing consent; normal selected browser\nauthentication and ambient providers were disabled. Only sanitized nonsecret progress was retained: ephemeral\nkeys generated, artifact signed, bundle written, and signature pushed to the private GHCR repository. Raw auth\nURLs, codes and tokens were not stored.\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8\ncd0ed10e2e8a6\nVerification exited 0. The actual certificate SAN email was 6631503097@lamduan.mfu.ac.th and its OIDC issuer\nextension was https://github.com/login/oauth; both matched the exact expected policy. Cosign validated claims,\ntrusted certificate evidence and transparency inclusion. No wildcard policy was substituted. The bundle\nimage.sigstore.json contains one log entry, index 3438951395, with inclusion proof. Public disclosure was\nauthorized even though the registry image remained private. [R9, R10]\nRemediation note (A08/CWE-829): require the authorized signer and immutable digest before a deployment\ndecision; reject unknown identity, missing signatures and verification errors. A trusted signature identifies approval\nof those bytes, not absence of vulnerable or malicious dependencies.\n",
     "34": "KOSEN69 | Week 12 - Software Supply-Chain Security\nWanna San | 6631503097 | 34\nevidence/task3-publication/push-status.json\ndocker push ghcr.io/6631503097/week12-supplychain:lab\nActual exit: 0\nevidence/task3-signing/sign-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign sign --yes --fulcio-auth-flow normal \n--oidc-disable-ambient-providers --bundle /private/tmp/software-security-wk12/submission/we\nek12-6631503097/evidence/task3-signing/image.sigstore.json ghcr.io/6631503097/week12-supply\nchain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8cd0ed10e2e8a6\nActual exit: 0\nevidence/task3-signing/verify-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity \n6631503097@lamduan.mfu.ac.th --certificate-oidc-issuer https://github.com/login/oauth ghcr.\nio/6631503097/week12-supplychain@sha256:f882526a88d1b808cbfc563a54f78db1650d10e6d025d7175b8\ncd0ed10e2e8a6\nActual exit: 0\nevidence/task3-negative/verify-worksheet-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity-regexp '.*' \n--certificate-oidc-issuer-regexp '.*' python:3.9-slim\nActual exit: 10\nevidence/task3-negative/verify-pinned-status.json\n/private/tmp/week12-tools/cosign/v3.1.4/cosign verify --certificate-identity-regexp '.*' \n--certificate-oidc-issuer-regexp '.*' index.docker.io/library/python@sha256:2d97f6910b16bd3\n38d3060f261f53f144965f755599aab1acda1e13cf1731b1b\nActual exit: 10\nevidence/task4/hash-refusal-status.json\n/private/tmp/week12-task4-hash-20261024/bin/pip install --require-hashes -r \nrequirements.txt\nActual exit: 1\nevidence/task4/single-index-refusal-status.json\n/private/tmp/week12-task4-hash-20261024/bin/pip install --require-hashes --index-url \nhttps://pypi.org/simple -r requirements.txt\nActual exit: 1\nevidence/task4/gate-status.json\nbash submission/week12-6631503097/support/task4-verification-gate.sh\nActual exit: 0\nevidence/final-qa/gate-wrong-identity-status.json\nbash tmp/week12-final-qa/gate-wrong-identity.sh\nActual exit: 1\nArtifact paths and hashes are indexed in evidence/final-qa/. The production gate is unchanged.\n"
   },
@@ -31,8 +31,8 @@
   "pages": [
     {
       "page": 1,
-      "text_characters": 608,
-      "render_variance": 2046.089326676897,
+      "text_characters": 592,
+      "render_variance": 2005.8955831582743,
       "images": 0
     },
     {
@@ -217,8 +217,8 @@
     },
     {
       "page": 32,
-      "text_characters": 2992,
-      "render_variance": 6347.976619337789,
+      "text_characters": 2948,
+      "render_variance": 6275.254312018832,
       "images": 0
     },
     {
@@ -330,6 +330,6 @@
   "under_20_mib": true,
   "personal_responses_approved": true,
   "drafting_instructions_absent": true,
-  "pr_url": null,
-  "visual_review": "PASS: all 34 pages rendered and inspected using contact sheets; changed Audit the AI pages 28 and 29 also inspected at full page resolution. No blank pages, clipping or missing images."
+  "pr_url": "https://github.com/nutthakorn7/software-security/pull/161",
+  "visual_review": "PASS: every final page rendered and visually inspected through all three contact sheets; no blank pages, clipping or missing evidence. All 15 embedded screenshots exactly match the original PNG pixels."
 }

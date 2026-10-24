@@ -17,20 +17,22 @@
 - [x] Instructor SHA-256 hashes and Git diff verified unchanged; original wk06 working tree not written.
 - [x] GHCR package rechecked PRIVATE through authenticated read-only API; no new publication or signing.
 - [x] Local defense code commit 336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b. The final report/evidence commit is recorded by git log.
-- [x] PR title/body prepared in PR-DRAFT.md. No push or PR performed.
+- [x] Published approved wk12 branch and opened PR https://github.com/nutthakorn7/software-security/pull/161 ; no merge.
 
 ## Student actions still required
 
 - [x] Student approved personal reflection, EiPE, strongest-defense rationale and Audit the AI critique.
-- [ ] Explicitly approve Git branch push and PR creation after review. Add the resulting real PR URL; the present local commit link is not remotely resolvable until push.
+- [x] Explicit push/PR approval received; branch published and actual PR URL added to the report.
 - [ ] Confirm/complete the individual Week 12 quiz at learn.zcr.ai/quiz using the issued one-time code; Codex did not attempt it.
 - [ ] Upload the reviewed PDF to learn.zcr.ai/submit with the issued submission code, before the instructor's deadline. The source rule says before the next class unless told otherwise; no exact class date was assumed.
 - [ ] If the instructor needs private GHCR access, arrange it deliberately; no access changes were made.
 
 ## Readiness and limits
 
-The technical submission package and formatted PDF are prepared, but the assignment is NOT fully ready to claim as submitted or independently student-authored until the publication/portal steps above are complete. No SLSA level, production deployment, full hash lockfile or package-upgrade remediation is claimed. Historical partial-status reports and preparation plans are preserved with explicit archival labels.
+The technical submission package and formatted PDF are prepared, but the assignment is NOT fully ready to claim as submitted or independently student-authored until the student portal/quiz actions above are complete. No SLSA level, production deployment, full hash lockfile or package-upgrade remediation is claimed. Historical partial-status reports and preparation plans are preserved with explicit archival labels.
 
 Final QA records: evidence/final-qa/pdf-structure-check.json, secret-review.json, inventory-final-check.json, final-private-package-check.json and final evidence index.
 
-Final review: PR target confirmed as nutthakorn7/software-security:main from 6631503097:wk12, with no merge. The fork’s main is intentionally unchanged; it is not a clean base for this upstream-baselined branch. Explicit push approval remains pending.
+Final review: PR target confirmed as nutthakorn7/software-security:main from 6631503097:wk12, with no merge. The fork’s main is intentionally unchanged; it is not a clean base for this upstream-baselined branch. Explicit push/PR/follow-up approval received; PR created without merging.
+
+Current final PDF validation: evidence/final-submission-review/pdf-validation.json and downloads-copy.json. Published PR: https://github.com/nutthakorn7/software-security/pull/161 .

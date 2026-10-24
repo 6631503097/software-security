@@ -1,0 +1,20 @@
+{
+  "command": [
+    "tmp/gh-cli/gh_2.103.2_macOS_arm64/bin/gh",
+    "pr",
+    "create",
+    "--repo",
+    "nutthakorn7/software-security",
+    "--base",
+    "main",
+    "--head",
+    "6631503097:wk12",
+    "--title",
+    "Week 12: supply-chain security report, SBOM and verified defense gate",
+    "--body-file",
+    "submission/week12-6631503097/support/pr-body.md"
+  ],
+  "exit_status": 0,
+  "started": "2026-10-24T15:26:06.933089+00:00",
+  "finished": "2026-10-24T15:26:10.674261+00:00"
+}

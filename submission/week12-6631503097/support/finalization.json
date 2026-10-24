@@ -7,9 +7,11 @@
   "eipe": "The Flask app returns simple JSON at / and /health, but its image includes intentionally outdated dependencies. The simulation shows how combining package sources can select an attacker-controlled public package before the application runs. The scans identify known dependency vulnerabilities; they do not prove an exploit of these endpoints.",
   "strongest_defense": "I consider a single curated trusted index the strongest first defense for The Imposters because it removes competing public candidates during package selection and centralizes package policy. This matches the simulation, where the same versions selected the private package after switching to one trusted index. It still needs reviewed hashes and verification because the trusted registry or an authorized maintainer could be compromised.",
   "audit": "The statement ‘the signed, digest-pinned image passed the exact email/issuer policy’ showed success, but did not prove that the gate rejects an unauthorized signer. The additional wrong-identity test exited 1 with DENY and no ALLOW, closing that missing check; the unsigned-image test separately demonstrated missing-signature rejection. The single-index command was also only a clean public-source demonstration, not a configured private registry, and neither signatures nor an SBOM establish a SLSA level.",
-  "pr_url": null,
-  "github_published": false,
+  "pr_url": "https://github.com/nutthakorn7/software-security/pull/161",
+  "github_published": true,
   "pr_base": "nutthakorn7/software-security:main",
   "pr_head": "6631503097/software-security:wk12",
-  "pr_target_choice_confirmed": true
+  "pr_target_choice_confirmed": true,
+  "publication_approval": "Approve push, PR, and final PDF follow-up",
+  "merge_authorized": false
 }

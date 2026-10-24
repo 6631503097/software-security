@@ -2,7 +2,7 @@
 
 Wanna San | 6631503097 | The Imposters | 24 October 2026
 
-Personal responses approved | GitHub publication pending approval
+Personal responses approved | GitHub PR published
 
 ## 1. Assignment overview and evidence integrity
 
@@ -425,7 +425,7 @@ Verification method actually performed: (1) reuse the recorded original gate PAS
 
 The lab produced genuine SCA evidence, a controlled dependency-confusion comparison, an image-derived CycloneDX inventory, a private published image, a matching-identity signature, missing-signature rejection and a simulated pre-deploy gate. Hash enforcement refused the original unhashed file. These are complementary trust controls, with explicitly recorded limits: no production deployment, no full hashed lockfile, no package-version remediation and no supported SLSA-level claim.
 
-Defense code commit: 336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b. Commit link: https://github.com/6631503097/software-security/commit/336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b . Repository: https://github.com/6631503097/software-security . Branch: wk12. GitHub publication awaits explicit push approval; no PR exists yet.
+Defense code commit: 336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b. Commit link: https://github.com/6631503097/software-security/commit/336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b . Repository: https://github.com/6631503097/software-security . Branch: wk12. PR: https://github.com/nutthakorn7/software-security/pull/161 .
 
 Course actions for the student: upload Wk12_6631503097.pdf to https://learn.zcr.ai/submit using your issued submission code. Complete the individual one-attempt quiz at https://learn.zcr.ai/quiz using the issued code; no quiz attempt or portal upload was performed by Codex. The repository portal implementation (labs/live-quiz/submission.py) sets a 20 MiB per-file limit; the PDF is checked below that limit without changing screenshot pixels. The repository deadline rule is before the next class unless the instructor says otherwise; the exact class date was not inferred. Quizzes are individual and irreversible between questions.
 
@@ -437,10 +437,10 @@ Course actions for the student: upload Wk12_6631503097.pdf to https://learn.zcr.
 | Reflection (15%) | Mapping, XZ analysis and student-approved SLSA self-assessment supplied |
 | Audit the AI / EiPE / Prompt | Actual interaction, verified correction and approved personal responses supplied |
 | Identity screenshots | 15 accepted originals embedded; rejected captures excluded |
-| GitHub code fix | Local defense commit exists; explicit push approval pending |
+| GitHub code fix | PR: https://github.com/nutthakorn7/software-security/pull/161 |
 | PDF / quiz / portal | PDF generated and checked; quiz status unknown; portal submission pending |
 
-The student confirmed the personal responses on 24 October 2026; AI assistance remains disclosed. Explicit approval for branch publication and PR creation is still pending. The student must complete the individual course-portal upload and confirm quiz status; neither action was performed by Codex.
+The student confirmed the personal responses on 24 October 2026; AI assistance remains disclosed. The GitHub PR is recorded above. The student must complete the individual course-portal upload and confirm quiz status; neither action was performed by Codex.
 
 ## 12. References
 

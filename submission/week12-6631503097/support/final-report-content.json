@@ -7,7 +7,7 @@
     "student_id": "6631503097",
     "group": "The Imposters",
     "date": "24 October 2026",
-    "status": "Personal responses approved | GitHub publication pending approval"
+    "status": "Personal responses approved | GitHub PR published"
   },
   {
     "kind": "section",
@@ -748,7 +748,7 @@
   },
   {
     "kind": "paragraph",
-    "text": "Defense code commit: 336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b. Commit link: https://github.com/6631503097/software-security/commit/336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b . Repository: https://github.com/6631503097/software-security . Branch: wk12. GitHub publication awaits explicit push approval; no PR exists yet."
+    "text": "Defense code commit: 336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b. Commit link: https://github.com/6631503097/software-security/commit/336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b . Repository: https://github.com/6631503097/software-security . Branch: wk12. PR: https://github.com/nutthakorn7/software-security/pull/161 ."
   },
   {
     "kind": "paragraph",
@@ -787,7 +787,7 @@
       ],
       [
         "GitHub code fix",
-        "Local defense commit exists; explicit push approval pending"
+        "PR: https://github.com/nutthakorn7/software-security/pull/161"
       ],
       [
         "PDF / quiz / portal",
@@ -797,7 +797,7 @@
   },
   {
     "kind": "paragraph",
-    "text": "The student confirmed the personal responses on 24 October 2026; AI assistance remains disclosed. Explicit approval for branch publication and PR creation is still pending. The student must complete the individual course-portal upload and confirm quiz status; neither action was performed by Codex."
+    "text": "The student confirmed the personal responses on 24 October 2026; AI assistance remains disclosed. The GitHub PR is recorded above. The student must complete the individual course-portal upload and confirm quiz status; neither action was performed by Codex."
   },
   {
     "kind": "section",

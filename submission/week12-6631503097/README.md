@@ -10,18 +10,18 @@ Group: The Imposters. Course: Software Security (KOSEN69).
 - `support/compose_final_report.py`, `support/build_final_pdf.py`: report/PDF generation sources. PDF dependencies are intentionally not committed.
 - `supporting/week12-working-history.md`: preserved chronological working report. Its earlier pending-status statements are historical; the consolidated report gives current results.
 - `preparation/`: historical authentication/signing plans and later readiness records. Their commands are not authorization to rerun signing/publication.
-- `PR-DRAFT.md`: proposed title/body only; no PR exists yet.
+- `PR-DRAFT.md`: published PR description and recorded target. PR: https://github.com/nutthakorn7/software-security/pull/161 .
 - `FINAL-CHECKLIST.md`: current completeness and remaining student actions.
 
 ## Reproducibility and scope
 
 Existing evidence is authoritative. Do not rerun signing or publication scripts merely to inspect the report. The original instructor sources remain unchanged. Local `/private/tmp` tool/fixture paths in recorded commands describe the environment at execution time; no binary, venv or token is included. The image was already privately published and signed under separate explicit approval.
 
-The main report links the local defense code commit. That commit link becomes remotely resolvable only after a separately approved branch push. The PR URL remains unfilled because PR creation is not authorized.
+The main report links the published defense code commit and PR: https://github.com/nutthakorn7/software-security/pull/161 . The PR targets nutthakorn7/software-security:main from 6631503097:wk12. No merge was performed.
 
 ## Personal responses approved
 
-Wanna San approved the reflection, EiPE, strongest-defense rationale and Audit the AI critique on 24 October 2026. AI assistance remains disclosed; the original interaction and technical evidence remain unchanged. GitHub publication still requires explicit approval. Quiz and course-portal submission remain student actions.
+Wanna San approved the reflection, EiPE, strongest-defense rationale and Audit the AI critique on 24 October 2026. AI assistance remains disclosed; the original interaction and technical evidence remain unchanged. GitHub branch publication and PR creation were explicitly approved and completed. Quiz and course-portal submission remain student actions.
 
 ## Preserved but excluded material
 

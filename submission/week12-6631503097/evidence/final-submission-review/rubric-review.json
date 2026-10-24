@@ -18,16 +18,17 @@
     "Defense commit link"
   ],
   "pending": [
-    "Explicit approval to push wk12 and create the PR",
-    "Insert actual PR URL and regenerate/validate PDF after PR creation",
-    "Student course-portal upload and quiz status"
+    "Student course-portal upload and quiz-status confirmation",
+    "If required, explicitly arrange instructor access to the private GHCR image"
   ],
   "pr_target": {
     "base": "nutthakorn7/software-security:main",
     "head": "6631503097:wk12",
     "upstream_main_verified": "eff680baf8d5f85e6cd736da776fb9d40e61c043",
-    "existing_pr": false,
-    "merge_authorized": false
+    "existing_pr": true,
+    "merge_authorized": false,
+    "pr_url": "https://github.com/nutthakorn7/software-security/pull/161",
+    "state": "OPEN"
   },
   "github_login_verified": "6631503097",
   "fork_public": true,
@@ -35,5 +36,6 @@
   "preserved_evidence": "No original screenshots, transcripts, command outputs, SBOM or signing evidence changed",
   "instructor_hashes_checked": 14,
   "instructor_mismatches": 0,
-  "notes": "Whitespace warnings in original captured tool output are intentionally preserved; no evidence was cleaned or rewritten. A signature gate is accurately distinguished from a full build-provenance policy."
+  "notes": "Whitespace warnings in original captured tool output are intentionally preserved; no evidence was cleaned or rewritten. A signature gate is accurately distinguished from a full build-provenance policy.",
+  "publication_approval": "Approve push, PR, and final PDF follow-up"
 }

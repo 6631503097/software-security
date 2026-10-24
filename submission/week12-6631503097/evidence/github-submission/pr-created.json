@@ -1,0 +1,77 @@
+{
+  "baseRefName": "main",
+  "changedFiles": 240,
+  "commits": [
+    {
+      "authoredDate": "2026-10-24T14:16:41Z",
+      "authors": [
+        {
+          "email": "wannasan0001@gmail.com",
+          "id": "U_kgDOCnLpeA",
+          "login": "wannasan-dev",
+          "name": "Wanna San"
+        }
+      ],
+      "committedDate": "2026-10-24T14:16:41Z",
+      "messageBody": "",
+      "messageHeadline": "Add Week 12 digest-pinned signature verification gate",
+      "oid": "336aaf8f9457d0a573c1649ff83e4cb0c2c99d2b"
+    },
+    {
+      "authoredDate": "2026-10-24T14:36:29Z",
+      "authors": [
+        {
+          "email": "wannasan0001@gmail.com",
+          "id": "U_kgDOCnLpeA",
+          "login": "wannasan-dev",
+          "name": "Wanna San"
+        }
+      ],
+      "committedDate": "2026-10-24T14:36:29Z",
+      "messageBody": "",
+      "messageHeadline": "Assemble Week 12 report, review PDF and verified evidence",
+      "oid": "92821d825f794a430b2198ccbabd9c17b6dafaad"
+    },
+    {
+      "authoredDate": "2026-10-24T15:08:55Z",
+      "authors": [
+        {
+          "email": "wannasan0001@gmail.com",
+          "id": "U_kgDOCnLpeA",
+          "login": "wannasan-dev",
+          "name": "Wanna San"
+        }
+      ],
+      "committedDate": "2026-10-24T15:08:55Z",
+      "messageBody": "\u2026dering",
+      "messageHeadline": "Regenerate Week 12 PDF after binary-to-text corruption and verify ren\u2026",
+      "oid": "e79d1d11204f4a52f208213f9124ded50c5466ec"
+    },
+    {
+      "authoredDate": "2026-10-24T15:23:57Z",
+      "authors": [
+        {
+          "email": "wannasan0001@gmail.com",
+          "id": "U_kgDOCnLpeA",
+          "login": "wannasan-dev",
+          "name": "Wanna San"
+        }
+      ],
+      "committedDate": "2026-10-24T15:23:57Z",
+      "messageBody": "\u2026am PR",
+      "messageHeadline": "Finalize approved Week 12 personal responses and prepare clean upstre\u2026",
+      "oid": "279c1e1b1d7ab699d2a6ddef7d7beb030debb56f"
+    }
+  ],
+  "headRefName": "wk12",
+  "headRepositoryOwner": {
+    "id": "U_kgDOCVZNJw",
+    "name": "Wanna San",
+    "login": "6631503097"
+  },
+  "isDraft": false,
+  "mergeable": "UNKNOWN",
+  "number": 161,
+  "state": "OPEN",
+  "url": "https://github.com/nutthakorn7/software-security/pull/161"
+}
