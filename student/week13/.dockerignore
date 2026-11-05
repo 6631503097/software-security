@@ -1,0 +1,13 @@
+.git
+.env
+.env.*
+*.key
+*.pem
+secrets/
+evidence/
+report/
+__pycache__/
+*.pyc
+Dockerfile.insecure
+iam-policy*.json
+verify_defense.py
