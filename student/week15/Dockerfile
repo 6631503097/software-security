@@ -6,7 +6,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 
 RUN useradd --create-home --uid 10001 appuser
-USER appuser
+USER root
 
 EXPOSE 5002
 CMD ["python", "app.py"]
